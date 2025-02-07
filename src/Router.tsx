@@ -1,6 +1,5 @@
 import {
   createBrowserRouter,
-  Outlet,
   RouteObject,
   RouterProvider,
 } from "react-router-dom";
@@ -11,16 +10,12 @@ import Events from "./components/pages/Events";
 import News from "./components/pages/News";
 import Store from "./components/pages/Store";
 import ChargeShop from "./components/pages/ChargeShop";
+import RootLayout from "./components/RootLayout";
 
 const routes: RouteObject[] = [
   {
     path: "/",
-    element: (
-      <div>
-        <div>레이아웃</div>
-        <Outlet />
-      </div>
-    ),
+    element: <RootLayout />,
     children: [
       {
         path: routeInfo.chart.path,
