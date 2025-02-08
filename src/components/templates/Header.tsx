@@ -22,11 +22,7 @@ export default function Header() {
           loop
         >
           {Object.values(routeInfo).map((route) => (
-            <SwiperSlide
-              className="h-full"
-              key={route.id}
-              onClick={() => swiperRef.current?.slideTo(1, 400)}
-            >
+            <SwiperSlide className="h-full" key={route.id}>
               <NavLink
                 to={route.path}
                 className={({ isActive }) =>

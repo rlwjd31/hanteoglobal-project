@@ -11,7 +11,7 @@ export default function RootLayout() {
         className={`relative size-full  flex flex-col bg-white min-h-[900px] mx-auto ${layoutContainerWidthStyle}`}
       >
         <Header />
-        <main className="flex flex-col items-center justify-center size-full bg-green-200">
+        <main className="flex flex-col items-center justify-center size-full bg-green-200 mt-(--height-header) py-8">
           <Outlet />
         </main>
         <Footer />
