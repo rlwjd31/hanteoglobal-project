@@ -2,7 +2,7 @@ import { layoutContainerWidthStyle } from "../RootLayout";
 
 export default function Footer() {
   return (
-    <div
+    <footer
       className={`fixed bottom-0 flex justify-between items-center px-8 py-6 bg-neutral-800 ${layoutContainerWidthStyle}`}
     >
       <div className="flex flex-col gap-6 flex-1">
@@ -30,6 +30,6 @@ export default function Footer() {
           />
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
