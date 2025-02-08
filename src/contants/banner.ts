@@ -1,7 +1,7 @@
 import banner1 from "../assets/banner1.png";
 import banner2 from "../assets/banner2.png";
 import banner3 from "../assets/banner3.png";
-import banner4 from "../assets/banner4.webp";
+import banner4 from "../assets/banner4.png";
 
 export const bannerInfo = [
   {
