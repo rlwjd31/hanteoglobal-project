@@ -1,0 +1,9 @@
+/* .swiper-pagination {
+
+  background-color: green;
+  transform: translateY(10px) !important;
+} */
+
+.swiper-pagination-bullet-active {
+  background-color: #d8455d !important;
+}

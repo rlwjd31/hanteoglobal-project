@@ -1,20 +1,27 @@
+import banner1 from "../assets/banner1.png";
+import banner2 from "../assets/banner2.png";
+import banner3 from "../assets/banner3.png";
+import banner4 from "../assets/banner4.webp";
+
 export const bannerInfo = [
   {
     id: "banner1",
-    imgSrc:
-      "https://resource.hanteonews.com/content/post/2025/02/05/6642aae8-2ec4-4e18-836b-f6dbe2dd6d7a.png",
+    imgSrc: banner1,
     href: "https://hanteonews.com/ko/article/music?fc=75443",
   },
   {
     id: "banner2",
-    imgSrc:
-      "https://resource.hanteonews.com/content/post/2025/02/06/4dcf135c-7025-4ae4-9de3-f9ebd0a0a03e.png",
+    imgSrc: banner2,
     href: "https://hanteonews.com/ko/article/chart?fc=75502",
   },
   {
     id: "banner3",
-    imgSrc:
-      "https://resource.whosfan.io/push/campaign/image/KakaoTalk_20241223_184318579.png",
+    imgSrc: banner3,
     href: "https://awards.hanteo.com/",
+  },
+  {
+    id: "banner4",
+    imgSrc: banner4,
+    href: "https://www.hanteochart.com/",
   },
 ];

@@ -1,27 +1,37 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { bannerInfo } from "../../contants/banner";
+import { useRef } from "react";
+
+import "./banner.style.css";
 
 export default function Chart() {
+  const swiperRef = useRef<SwiperClass>(null);
+
   return (
     <>
       <Swiper
-        className="flex flex-row w-full items-center justify-between font-bold h-48 py-14 transition-all duration-200 ease-out"
         modules={[Pagination]}
+        className="flex flex-row w-full items-center justify-between font-bold h-72 transition-all duration-200 ease-out"
         slidesPerView={1}
-        onSlideChange={(something) => console.log(something.realIndex)}
-        pagination={{ clickable: true }}
+        pagination={{
+          clickable: true,
+        }}
         centeredSlides
         grabCursor
         loop
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
         {bannerInfo.map((banner) => (
           <SwiperSlide
-            className="w-full flex items-center justify-center size-full bg-orange-200 transition-all duration-200 ease-out"
+            className="w-full flex items-center justify-center size-full transition-all duration-200 ease-out pb-10"
             key={banner.id}
           >
             <a href={banner.href} target="_blank">
-              <img className="size-full object-fill" src={banner.imgSrc} />
+              <img
+                className="size-full object-fill rounded-2xl"
+                src={banner.imgSrc}
+              />
             </a>
           </SwiperSlide>
         ))}
