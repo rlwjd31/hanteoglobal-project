@@ -4,12 +4,13 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 
 import "swiper/swiper-bundle.css";
 import { useRef } from "react";
+import { layoutContainerWidthStyle } from "../RootLayout";
 
 export default function Header() {
   const swiperRef = useRef<SwiperClass>(null);
 
   return (
-    <header className="absolute w-full top-0 left-0 bg-header h-header">
+    <header className={`fixed bg-header h-header ${layoutContainerWidthStyle}`}>
       <nav className="h-full">
         <Swiper
           className="flex flex-row h-full items-center justify-between font-bold"

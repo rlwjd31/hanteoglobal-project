@@ -1,7 +1,11 @@
+import { layoutContainerWidthStyle } from "../RootLayout";
+
 export default function Footer() {
   return (
-    <div className="flex justify-between items-center p-8 bg-neutral-800">
-      <div className="flex flex-col gap-8 flex-1">
+    <div
+      className={`fixed bottom-0 flex justify-between items-center px-8 py-6 bg-neutral-800 ${layoutContainerWidthStyle}`}
+    >
+      <div className="flex flex-col gap-6 flex-1">
         <div className="flex gap-4 text-neutral-500 font-bold">
           <a href="http://www.hanteoglobal.com/" target="_blank">
             Company Introduction
