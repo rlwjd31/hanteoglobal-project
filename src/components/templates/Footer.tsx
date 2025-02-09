@@ -1,3 +1,4 @@
+import Container from "../atoms/Container";
 import Img from "../atoms/Img";
 import { layoutContainerWidthStyle } from "../RootLayout";
 
@@ -6,8 +7,8 @@ export default function Footer() {
     <footer
       className={`absolute bottom-0 text-xs left-0 gap-4 max-h-footer flex justify-between items-center px-8 py-6 bg-neutral-800 ${layoutContainerWidthStyle}`}
     >
-      <div className="flex flex-col gap-6 flex-1">
-        <div className="flex gap-4 text-neutral-500 font-bold">
+      <Container.FlexCol className="gap-6 flex-1">
+        <Container.FlexRow className="gap-4 text-neutral-500 font-bold">
           <a href="http://www.hanteoglobal.com/" target="_blank">
             Company Introduction
           </a>
@@ -17,19 +18,19 @@ export default function Footer() {
           >
             Partnership
           </a>
-        </div>
-        <div className="font-normal text-neutral-600">
+        </Container.FlexRow>
+        <Container className="font-normal text-neutral-600">
           <div>Copyright ⓒ HANTEO GLOBAL, Inc. All Rights Reserved</div>
-        </div>
-      </div>
-      <div>
-        <div className="w-32 h-20">
+        </Container>
+      </Container.FlexCol>
+      <Container>
+        <Container className="w-32 h-20">
           <Img
             src="https://www.hanteochart.com/static/media/copyright_logo_en.d6b2417c3c3352031e33.png"
             alt="저작권 OK 로고"
           />
-        </div>
-      </div>
+        </Container>
+      </Container>
     </footer>
   );
 }

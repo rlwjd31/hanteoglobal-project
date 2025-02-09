@@ -8,6 +8,7 @@ import { Settings } from "react-slick";
 import "./banner.style.css";
 import { useRef, useState } from "react";
 import Img from "../../atoms/Img";
+import Container from "../../atoms/Container";
 
 type PaginationBulletsProps = {
   length: number;
@@ -23,8 +24,8 @@ function PaginationBullets({
   className = "",
 }: PaginationBulletsProps) {
   return (
-    <div
-      className={`flex w-full py-2 gap-2 items-center justify-center z-50 mt-2 ${className}`}
+    <Container.FlexRow
+      className={`w-full py-2 gap-2 items-center justify-center z-50 mt-2 ${className}`}
     >
       {Array(length)
         .fill(0)
@@ -37,7 +38,7 @@ function PaginationBullets({
             onClick={() => callback(index)}
           />
         ))}
-    </div>
+    </Container.FlexRow>
   );
 }
 

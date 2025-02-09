@@ -1,6 +1,7 @@
 import { CurationContentItemType } from "../../types/curationContent.type";
 import Card from "../atoms/Card";
 import Container from "../atoms/Container";
+import Img from "../atoms/Img";
 
 export default function CurationChartItem({
   id,
@@ -20,11 +21,7 @@ export default function CurationChartItem({
             {rank}
           </Container.FlexRow>
           <Container.FlexRow className="mx-4 size-20 rounded-md overflow-hidden shrink-0">
-            <img
-              className="size-full object-cover"
-              src={imgSrc}
-              alt={`image-${id}`}
-            />
+            <Img className="object-fill" src={imgSrc} alt={`image-${id}`} />
           </Container.FlexRow>
         </Container.FlexRow>
         <Container.FlexRow className="flex-1">

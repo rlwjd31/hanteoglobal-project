@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Container from "./Container";
 
 export default function Card({
   children,
@@ -8,10 +9,10 @@ export default function Card({
   className?: string;
 }) {
   return (
-    <div
-      className={`flex rounded-lg p-4 shadow-card border border-neutral-200 hover:bg-neutral-100 cursor-pointer ${className}`}
+    <Container.FlexRow
+      className={`rounded-lg p-4 shadow-card border border-neutral-200 hover:bg-neutral-100 cursor-pointer ${className}`}
     >
       {children}
-    </div>
+    </Container.FlexRow>
   );
 }
