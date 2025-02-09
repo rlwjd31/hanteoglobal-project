@@ -4,7 +4,7 @@
   --color-header: #ffb1b2;
   --height-header: 4rem;
   --height-footer: 8rem;
-  --shadow-card: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+  --shadow-card: rgba(99, 99, 99, 0.2) 0px 0px 6px 0px;
 }
 
 html {
