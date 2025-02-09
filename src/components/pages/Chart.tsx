@@ -44,10 +44,10 @@ export default function Chart() {
 
   return (
     <>
-      <Banner />
-      <Container.FlexCol className="flex-1 size-full mt-8">
+      <Container.FlexCol className="size-full">
+        <Banner />
         <ChartHeaderSection />
-        <section className="flex flex-col h-full">
+        <section className="flex flex-col h-full overflow-auto pb-8 gap-y-4">
           {(curationChartContent ?? []) &&
             curationChartContent.map((content) => (
               <CurationChartItem key={content.id} {...content} />
