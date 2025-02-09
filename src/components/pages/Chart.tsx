@@ -1,7 +1,8 @@
+import { fakeFetchChart } from "../../utils/fakeFetchChart";
 import Card from "../atoms/Card";
 import Container from "../atoms/Container";
 import Banner from "../templates/banner/Banner";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function ChartHeaderSection() {
   return (
@@ -26,32 +27,14 @@ function ChartHeaderSection() {
 export default function Chart() {
   useEffect(() => {
     (async () => {
-      const result = await fetch("/db/curation-contents.json");
-      const jsonData = await result.json();
-      // jsonData.map(data => ({
-      //   ...data,
-      //   link: data.
-      // }))
-
-      const parsedData = jsonData.map((data) => {
-        const id = data["imgSrc"].split("/")[4].split("_")[0];
-        const linkSrc = `https://www.hanteochart.com/albumdetail/${id}/real`;
-
-        return {
-          ...data,
-          id,
-          linkSrc,
-        };
+      const result = await fakeFetchChart({
+        pageParam: 1,
+        pageDataLength: 10,
+        delay: 2000,
       });
-      console.log("parsedData", JSON.stringify(parsedData));
     })();
   }, []);
 
-
-
-
-
-  
   return (
     <>
       <Banner />
