@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { CurationContentItemType } from "../../../types/curationContent.type";
 import { fakeFetchChart } from "../../../utils/fakeFetchChart";
 import CurationChartItem from "../../molecules/CurationChartItem";
 import CustomIntersectionObserver from "../../molecules/CustomIntersectionObserver";
 import { ClipLoader } from "react-spinners";
+import { debounce } from "../../../utils/debounce";
 
 export default function ChartBodySection() {
   const [curationChartContent, setCurationChartContent] = useState<{
@@ -34,27 +35,28 @@ export default function ChartBodySection() {
         pageParam: prev.pageParam + 1,
       }));
     })();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // @FIXME: below method invoke twice cuz strict mode
-  const fetchMoreCurationChartData = async () => {
-    setCurationChartContent((prev) => ({ ...prev, isLoading: true }));
+  const fetchMoreCurationChartData = useCallback(
+    debounce(async () => {
+      setCurationChartContent((prev) => ({ ...prev, isLoading: true }));
 
-    const result = await fakeFetchChart({
-      pageParam: curationChartContent.pageParam,
-      pageDataLength: curationChartContent.pageDataLength,
-      delay: 1000,
-    });
+      const result = await fakeFetchChart({
+        pageParam: curationChartContent.pageParam,
+        pageDataLength: curationChartContent.pageDataLength,
+        delay: 1000,
+      });
 
-    setCurationChartContent((prev) => ({
-      ...prev,
-      contents: [...prev.contents, ...result],
-      isLoading: false,
-      pageParam: prev.pageParam + 1,
-    }));
-  };
-
-  console.log(curationChartContent);
+      setCurationChartContent((prev) => ({
+        ...prev,
+        contents: [...prev.contents, ...result],
+        isLoading: false,
+        pageParam: prev.pageParam + 1,
+      }));
+    }, 100),
+    [curationChartContent]
+  );
 
   return initialLoading ? (
     <div className="flex h-full justify-center items-center">
@@ -66,13 +68,8 @@ export default function ChartBodySection() {
         curationChartContent.contents.map((content) => (
           <CurationChartItem key={content.id} {...content} />
         ))}
-      {/* TODO: fetch more curation chart data when intersecting observer */}
       {!curationChartContent.isLoading && (
-        <CustomIntersectionObserver
-          className="bg-green-400"
-          callback={fetchMoreCurationChartData}
-          // callback={() => console.log("fetch more data")}
-        />
+        <CustomIntersectionObserver callback={fetchMoreCurationChartData} />
       )}
       {curationChartContent.isLoading && (
         <div className="flex justify-center items-center shrink-0 h-12">

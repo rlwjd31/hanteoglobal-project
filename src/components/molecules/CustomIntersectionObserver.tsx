@@ -36,8 +36,6 @@ export default function CustomIntersectionObserver({
     const observer = new IntersectionObserver(
       (entries: IntersectionObserverEntry[]) => {
         entries.forEach((entry) => {
-          const el = entry.target;
-          console.log("el", el);
           if (entry.isIntersecting) memoizedCallback();
         });
       },
