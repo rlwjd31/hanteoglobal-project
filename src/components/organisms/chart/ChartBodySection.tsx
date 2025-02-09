@@ -36,6 +36,7 @@ export default function ChartBodySection() {
     })();
   }, []);
 
+  // @FIXME: below method invoke twice cuz strict mode
   const fetchMoreCurationChartData = async () => {
     setCurationChartContent((prev) => ({ ...prev, isLoading: true }));
 
