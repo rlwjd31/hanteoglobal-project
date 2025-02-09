@@ -1,402 +1,602 @@
 [
   {
     "rank": "1",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 1",
-    "artist": "Artist 1",
-    "sales": "1000",
-    "indexScore": "900.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1739108435752",
+    "albumTitle": "Caligo Pt.1: 미니앨범 3집, Fugitive Ver.",
+    "artistName": "PLAVE",
+    "sales": "44,120",
+    "indexScore": "55,150.00",
+    "id": "900540088",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900540088/real"
   },
   {
     "rank": "2",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 2",
-    "artist": "Artist 2",
-    "sales": "2000",
-    "indexScore": "1800.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1739108435752",
+    "albumTitle": "Caligo Pt.1: 미니앨범 3집, POCAALBUM Ver.",
+    "artistName": "PLAVE",
+    "sales": "43,418",
+    "indexScore": "39,076.20",
+    "id": "900540088",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900540088/real"
   },
   {
     "rank": "3",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 3",
-    "artist": "Artist 3",
-    "sales": "3000",
-    "indexScore": "2700.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1739108435752",
+    "albumTitle": "Caligo Pt.1: 미니앨범 3집, Vanguard Ver.",
+    "artistName": "PLAVE",
+    "sales": "20,433",
+    "indexScore": "23,497.95",
+    "id": "900540088",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900540088/real"
   },
   {
     "rank": "4",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 4",
-    "artist": "Artist 4",
-    "sales": "4000",
-    "indexScore": "3600.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900539506_s150.jpg?now=1739108435752",
+    "albumTitle": "IVE EMPATHY: 미니앨범 3집, MD Ver.",
+    "artistName": "IVE",
+    "sales": "1,466",
+    "indexScore": "2,932.00",
+    "id": "900539506",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900539506/real"
   },
   {
     "rank": "5",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 5",
-    "artist": "Artist 5",
-    "sales": "5000",
-    "indexScore": "4500.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900539506_s150.jpg?now=1739108435752",
+    "albumTitle": "IVE EMPATHY: 미니앨범 3집, LOVED IVE ver.",
+    "artistName": "IVE",
+    "sales": "2,301",
+    "indexScore": "2,876.25",
+    "id": "900539506",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900539506/real"
   },
   {
     "rank": "6",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 6",
-    "artist": "Artist 6",
-    "sales": "6000",
-    "indexScore": "5400.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900539506_s150.jpg?now=1739108435752",
+    "albumTitle": "IVE EMPATHY: 미니앨범 3집",
+    "artistName": "IVE",
+    "sales": "2,100",
+    "indexScore": "2,625.00",
+    "id": "900539506",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900539506/real"
   },
   {
     "rank": "7",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 7",
-    "artist": "Artist 7",
-    "sales": "7000",
-    "indexScore": "6300.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900540447_s150.jpg?now=1739108435752",
+    "albumTitle": "Glow Up: 미니앨범 2집, ME VER.",
+    "artistName": "RESCENE",
+    "sales": "1,004",
+    "indexScore": "1,204.80",
+    "id": "900540447",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900540447/real"
   },
   {
     "rank": "8",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 8",
-    "artist": "Artist 8",
-    "sales": "8000",
-    "indexScore": "7200.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900539506_s150.jpg?now=1739108435752",
+    "albumTitle": "IVE EMPATHY: 미니앨범 3집, Digipack ver.",
+    "artistName": "IVE",
+    "sales": "819",
+    "indexScore": "737.10",
+    "id": "900539506",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900539506/real"
   },
   {
     "rank": "9",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 9",
-    "artist": "Artist 9",
-    "sales": "9000",
-    "indexScore": "8100.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900540447_s150.jpg?now=1739108435752",
+    "albumTitle": "Glow Up: 미니앨범 2집, WE VER.",
+    "artistName": "RESCENE",
+    "sales": "506",
+    "indexScore": "708.40",
+    "id": "900540447",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900540447/real"
   },
   {
     "rank": "10",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 10",
-    "artist": "Artist 10",
-    "sales": "10000",
-    "indexScore": "9000.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900539506_s150.jpg?now=1739108435752",
+    "albumTitle": "IVE EMPATHY: 미니앨범 3집, PLVE ver.",
+    "artistName": "IVE",
+    "sales": "718",
+    "indexScore": "610.30",
+    "id": "900539506",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900539506/real"
   },
   {
     "rank": "11",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 11",
-    "artist": "Artist 11",
-    "sales": "11000",
-    "indexScore": "9900.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900540447_s150.jpg?now=1739108435752",
+    "albumTitle": "Glow Up: 미니앨범 2집, QR ALBUM ME VER.",
+    "artistName": "RESCENE",
+    "sales": "625",
+    "indexScore": "350.00",
+    "id": "900540447",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900540447/real"
   },
   {
     "rank": "12",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 12",
-    "artist": "Artist 12",
-    "sales": "12000",
-    "indexScore": "10800.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900540447_s150.jpg?now=1739108435752",
+    "albumTitle": "Glow Up: 미니앨범 2집, QR ALBUM WE VER.",
+    "artistName": "RESCENE",
+    "sales": "625",
+    "indexScore": "350.00",
+    "id": "900540447",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900540447/real"
   },
   {
     "rank": "13",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 13",
-    "artist": "Artist 13",
-    "sales": "13000",
-    "indexScore": "11700.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900514272_s150.jpg?now=1739108435752",
+    "albumTitle": "WHO!",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "256",
+    "indexScore": "320.00",
+    "id": "900514272",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900514272/real"
   },
   {
     "rank": "14",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 14",
-    "artist": "Artist 14",
-    "sales": "14000",
-    "indexScore": "12600.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900527190_s150.jpg?now=1739108435752",
+    "albumTitle": "HOW?: 미니앨범 2집",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "179",
+    "indexScore": "238.07",
+    "id": "900527190",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900527190/real"
   },
   {
     "rank": "15",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 15",
-    "artist": "Artist 15",
-    "sales": "15000",
-    "indexScore": "13500.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900533849_s150.jpg?now=1739108435752",
+    "albumTitle": "19.99: 미니앨범 3집",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "173",
+    "indexScore": "230.09",
+    "id": "900533849",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900533849/real"
   },
   {
     "rank": "16",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 16",
-    "artist": "Artist 16",
-    "sales": "16000",
-    "indexScore": "14400.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900529017_s150.jpg?now=1739108435752",
+    "albumTitle": "How Sweet, Standard ver.",
+    "artistName": "NewJeans",
+    "sales": "135",
+    "indexScore": "148.50",
+    "id": "900529017",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900529017/real"
   },
   {
     "rank": "17",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 17",
-    "artist": "Artist 17",
-    "sales": "17000",
-    "indexScore": "15300.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900518881_s150.jpg?now=1739108435752",
+    "albumTitle": "WHY..: 미니앨범 1집",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "111",
+    "indexScore": "147.63",
+    "id": "900518881",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900518881/real"
   },
   {
     "rank": "18",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 18",
-    "artist": "Artist 18",
-    "sales": "18000",
-    "indexScore": "16200.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900537643_s150.jpg?now=1739108435752",
+    "albumTitle": "SKZHOP HIPTAPE: 合 (HOP)",
+    "artistName": "Stray Kids",
+    "sales": "122",
+    "indexScore": "146.40",
+    "id": "900537643",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900537643/real"
   },
   {
     "rank": "19",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 19",
-    "artist": "Artist 19",
-    "sales": "19000",
-    "indexScore": "17100.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900525466_s150.jpg?now=1739108435752",
+    "albumTitle": "ASTERUM : 134-1: 미니앨범 2집, 미니 CD Ver.",
+    "artistName": "PLAVE",
+    "sales": "105",
+    "indexScore": "120.75",
+    "id": "900525466",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900525466/real"
   },
   {
     "rank": "20",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 20",
-    "artist": "Artist 20",
-    "sales": "20000",
-    "indexScore": "18000.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900535915_s150.jpg?now=1739108435752",
+    "albumTitle": "별의 장: SANCTUARY: 미니앨범 7집",
+    "artistName": "TOMORROW X TOGETHER",
+    "sales": "92",
+    "indexScore": "119.60",
+    "id": "900535915",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900535915/real"
   },
   {
     "rank": "21",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 21",
-    "artist": "Artist 21",
-    "sales": "21000",
-    "indexScore": "18900.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900518881_s150.jpg?now=1739108435752",
+    "albumTitle": "WHY..: 미니앨범 1집, LETTER ver.",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "119",
+    "indexScore": "101.15",
+    "id": "900518881",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900518881/real"
   },
   {
     "rank": "22",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 22",
-    "artist": "Artist 22",
-    "sales": "22000",
-    "indexScore": "19800.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900539423_s150.jpg?now=1739108435752",
+    "albumTitle": "Somewhere Out There: 미니앨범 5집, KiT VER.",
+    "artistName": "M.O.N.T",
+    "sales": "76",
+    "indexScore": "98.80",
+    "id": "900539423",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900539423/real"
   },
   {
     "rank": "23",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 23",
-    "artist": "Artist 23",
-    "sales": "23000",
-    "indexScore": "20700.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900535421_s150.jpg?now=1739108435752",
+    "albumTitle": "Whiplash: 미니앨범 5집, BEAT Ver.",
+    "artistName": "aespa",
+    "sales": "76",
+    "indexScore": "98.80",
+    "id": "900535421",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900535421/real"
   },
   {
     "rank": "24",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 24",
-    "artist": "Artist 24",
-    "sales": "24000",
-    "indexScore": "21600.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900533849_s150.jpg?now=1739108435752",
+    "albumTitle": "19.99: 미니앨범 3집, Clink ver.",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "115",
+    "indexScore": "97.75",
+    "id": "900533849",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900533849/real"
   },
   {
     "rank": "25",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 25",
-    "artist": "Artist 25",
-    "sales": "25000",
-    "indexScore": "22500.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900539503_s150.jpg?now=1739108435752",
+    "albumTitle": "TELEPARTY",
+    "artistName": "BSS",
+    "sales": "72",
+    "indexScore": "95.76",
+    "id": "900539503",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900539503/real"
   },
   {
     "rank": "26",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 26",
-    "artist": "Artist 26",
-    "sales": "26000",
-    "indexScore": "23400.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900527190_s150.jpg?now=1739108435752",
+    "albumTitle": "HOW?: 미니앨범 2집, Sticker ver.",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "109",
+    "indexScore": "92.65",
+    "id": "900527190",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900527190/real"
   },
   {
     "rank": "27",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 27",
-    "artist": "Artist 27",
-    "sales": "27000",
-    "indexScore": "24300.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900535968_s150.jpg?now=1739108435752",
+    "albumTitle": "DRIP",
+    "artistName": "BABYMONSTER",
+    "sales": "68",
+    "indexScore": "88.40",
+    "id": "900535968",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900535968/real"
   },
   {
     "rank": "28",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 28",
-    "artist": "Artist 28",
-    "sales": "28000",
-    "indexScore": "25200.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900530909_s150.jpg?now=1739108435752",
+    "albumTitle": "I SWAY: 미니앨범 7집",
+    "artistName": "(G) I-DLE",
+    "sales": "68",
+    "indexScore": "85.00",
+    "id": "900530909",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900530909/real"
   },
   {
     "rank": "29",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 29",
-    "artist": "Artist 29",
-    "sales": "29000",
-    "indexScore": "26100.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900523958_s150.jpg?now=1739108435752",
+    "albumTitle": "2, 일반 VER.",
+    "artistName": "(G) I-DLE",
+    "sales": "63",
+    "indexScore": "78.75",
+    "id": "900523958",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900523958/real"
   },
   {
     "rank": "30",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 30",
-    "artist": "Artist 30",
-    "sales": "30000",
-    "indexScore": "27000.00"
+    "imgSrc": "https://resource.hanteochart.io/album/001216408_s150.jpg?now=1739108435752",
+    "albumTitle": "Acid Angel from Asia: ACCESS: 미니앨범, Objekt Music Album",
+    "artistName": "tripleS",
+    "sales": "174",
+    "indexScore": "78.30",
+    "id": "001216408",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/001216408/real"
   },
   {
     "rank": "31",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 31",
-    "artist": "Artist 31",
-    "sales": "31000",
-    "indexScore": "27900.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900535968_s150.jpg?now=1739108435752",
+    "albumTitle": "DRIP, YG TAG ALBUM Ver.",
+    "artistName": "BABYMONSTER",
+    "sales": "89",
+    "indexScore": "75.65",
+    "id": "900535968",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900535968/real"
   },
   {
     "rank": "32",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 32",
-    "artist": "Artist 32",
-    "sales": "32000",
-    "indexScore": "28800.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900534779_s150.jpg?now=1739108435752",
+    "albumTitle": "Steady: 미니앨범 1집, QR Ver.",
+    "artistName": "NCT WISH",
+    "sales": "78",
+    "indexScore": "74.10",
+    "id": "900534779",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900534779/real"
   },
   {
     "rank": "33",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 33",
-    "artist": "Artist 33",
-    "sales": "33000",
-    "indexScore": "29700.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900528011_s150.jpg?now=1739108435752",
+    "albumTitle": "RIIZING: 미니앨범 1집, Photo Book Ver.",
+    "artistName": "RIIZE",
+    "sales": "61",
+    "indexScore": "73.20",
+    "id": "900528011",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900528011/real"
   },
   {
     "rank": "34",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 34",
-    "artist": "Artist 34",
-    "sales": "34000",
-    "indexScore": "30600.00"
+    "imgSrc": "https://resource.hanteochart.io/album/058701718_s150.jpg?now=1739108435752",
+    "albumTitle": "NEWJEANS: 미니앨범 1집, BLUEBOOK VER.",
+    "artistName": "NewJeans",
+    "sales": "54",
+    "indexScore": "68.58",
+    "id": "058701718",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/058701718/real"
   },
   {
     "rank": "35",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 35",
-    "artist": "Artist 35",
-    "sales": "35000",
-    "indexScore": "31500.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900525706_s150.jpg?now=1739108435752",
+    "albumTitle": "WISH, Photobook Ver.",
+    "artistName": "NCT WISH",
+    "sales": "65",
+    "indexScore": "65.00",
+    "id": "900525706",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900525706/real"
   },
   {
     "rank": "36",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 36",
-    "artist": "Artist 36",
-    "sales": "36000",
-    "indexScore": "32400.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900526412_s150.jpg?now=1739108435752",
+    "albumTitle": "minisode 3: TOMORROW: 미니앨범 6집",
+    "artistName": "TOMORROW X TOGETHER",
+    "sales": "50",
+    "indexScore": "65.00",
+    "id": "900526412",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900526412/real"
   },
   {
     "rank": "37",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 37",
-    "artist": "Artist 37",
-    "sales": "37000",
-    "indexScore": "33300.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900535915_s150.jpg?now=1739108435752",
+    "albumTitle": "별의 장: SANCTUARY: 미니앨범 7집, ANGEL Ver.",
+    "artistName": "TOMORROW X TOGETHER",
+    "sales": "73",
+    "indexScore": "62.05",
+    "id": "900535915",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900535915/real"
   },
   {
     "rank": "38",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 38",
-    "artist": "Artist 38",
-    "sales": "38000",
-    "indexScore": "34200.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900528796_s150.jpg?now=1739108435752",
+    "albumTitle": "Armageddon, Zine Ver.",
+    "artistName": "aespa",
+    "sales": "61",
+    "indexScore": "61.00",
+    "id": "900528796",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900528796/real"
   },
   {
     "rank": "39",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 39",
-    "artist": "Artist 39",
-    "sales": "39000",
-    "indexScore": "35100.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900513575_s150.jpg?now=1739108435752",
+    "albumTitle": "I feel: 미니앨범 6집",
+    "artistName": "(G) I-DLE",
+    "sales": "48",
+    "indexScore": "60.00",
+    "id": "900513575",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900513575/real"
   },
   {
     "rank": "40",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 40",
-    "artist": "Artist 40",
-    "sales": "40000",
-    "indexScore": "36000.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900518673_s150.jpg?now=1739108435752",
+    "albumTitle": "ASTERUM : The Shape of Things to Come: 미니앨범 1집",
+    "artistName": "PLAVE",
+    "sales": "48",
+    "indexScore": "57.60",
+    "id": "900518673",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900518673/real"
   },
   {
     "rank": "41",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 41",
-    "artist": "Artist 41",
-    "sales": "41000",
-    "indexScore": "36900.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900526271_s150.jpg?now=1739108435752",
+    "albumTitle": "BABYMONS7ER: 미니앨범 1집, YG TAG ALBUM VER.",
+    "artistName": "BABYMONSTER",
+    "sales": "80",
+    "indexScore": "56.80",
+    "id": "900526271",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900526271/real"
   },
   {
     "rank": "42",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 42",
-    "artist": "Artist 42",
-    "sales": "42000",
-    "indexScore": "37800.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900531058_s150.jpg?now=1739108435752",
+    "albumTitle": "ROMANCE : UNTOLD",
+    "artistName": "ENHYPEN",
+    "sales": "40",
+    "indexScore": "56.00",
+    "id": "900531058",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900531058/real"
   },
   {
     "rank": "43",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 43",
-    "artist": "Artist 43",
-    "sales": "43000",
-    "indexScore": "38700.00"
+    "imgSrc": "https://resource.hanteochart.io/album/058701530_s150.jpg?now=1739108435752",
+    "albumTitle": "FACE THE SUN",
+    "artistName": "SEVENTEEN",
+    "sales": "41",
+    "indexScore": "54.94",
+    "id": "058701530",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/058701530/real"
   },
   {
     "rank": "44",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 44",
-    "artist": "Artist 44",
-    "sales": "44000",
-    "indexScore": "39600.00"
+    "imgSrc": "https://resource.hanteochart.io/album/034205364_s150.jpg?now=1739108435752",
+    "albumTitle": "AN ODE",
+    "artistName": "SEVENTEEN",
+    "sales": "38",
+    "indexScore": "54.93",
+    "id": "034205364",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/034205364/real"
   },
   {
     "rank": "45",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 45",
-    "artist": "Artist 45",
-    "sales": "45000",
-    "indexScore": "40500.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900537122_s150.jpg?now=1739108435752",
+    "albumTitle": "Last Bell",
+    "artistName": "TWS",
+    "sales": "45",
+    "indexScore": "54.00",
+    "id": "900537122",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900537122/real"
   },
   {
     "rank": "46",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 46",
-    "artist": "Artist 46",
-    "sales": "46000",
-    "indexScore": "41400.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900535421_s150.jpg?now=1739108435752",
+    "albumTitle": "Whiplash: 미니앨범 5집, SMini Ver.",
+    "artistName": "aespa",
+    "sales": "60",
+    "indexScore": "54.00",
+    "id": "900535421",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900535421/real"
   },
   {
     "rank": "47",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 47",
-    "artist": "Artist 47",
-    "sales": "47000",
-    "indexScore": "42300.00"
+    "imgSrc": "https://resource.hanteochart.io/album/049800676_s150.jpg?now=1739108435752",
+    "albumTitle": "권지용",
+    "artistName": "G-DRAGON",
+    "sales": "21",
+    "indexScore": "53.07",
+    "id": "049800676",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/049800676/real"
   },
   {
     "rank": "48",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 48",
-    "artist": "Artist 48",
-    "sales": "48000",
-    "indexScore": "43200.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900533849_s150.jpg?now=1739108435752",
+    "albumTitle": "19.99: 미니앨범 3집, weverse albums ver.",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "70",
+    "indexScore": "52.50",
+    "id": "900533849",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900533849/real"
   },
   {
     "rank": "49",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 49",
-    "artist": "Artist 49",
-    "sales": "49000",
-    "indexScore": "44100.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900519936_s150.jpg?now=1739108435752",
+    "albumTitle": "SEVENTEENTH HEAVEN: 미니앨범 11집",
+    "artistName": "SEVENTEEN",
+    "sales": "37",
+    "indexScore": "51.80",
+    "id": "900519936",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900519936/real"
   },
   {
     "rank": "50",
-    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
-    "albumTitle": "Album Title 50",
-    "artist": "Artist 50",
-    "sales": "50000",
-    "indexScore": "45000.00"
+    "imgSrc": "https://resource.hanteochart.io/album/900535915_s150.jpg?now=1739108435752",
+    "albumTitle": "별의 장: SANCTUARY: 미니앨범 7집, Weverse Albums ver.",
+    "artistName": "TOMORROW X TOGETHER",
+    "sales": "68",
+    "indexScore": "51.68",
+    "id": "900535915",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900535915/real"
+  },
+  {
+    "rank": "51",
+    "imgSrc": "https://resource.hanteochart.io/album/900527190_s150.jpg?now=1739108435752",
+    "albumTitle": "HOW?: 미니앨범 2집, Weverse Albums ver.",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "68",
+    "indexScore": "51.00",
+    "id": "900527190",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900527190/real"
+  },
+  {
+    "rank": "52",
+    "imgSrc": "https://resource.hanteochart.io/album/900531241_s150.jpg?now=1739108435752",
+    "albumTitle": "ATE: 미니앨범 9집",
+    "artistName": "Stray Kids",
+    "sales": "42",
+    "indexScore": "50.40",
+    "id": "900531241",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900531241/real"
+  },
+  {
+    "rank": "53",
+    "imgSrc": "https://resource.hanteochart.io/album/900537643_s150.jpg?now=1739108435752",
+    "albumTitle": "SKZHOP HIPTAPE: 合 (HOP), ACCORDION VER.",
+    "artistName": "Stray Kids",
+    "sales": "59",
+    "indexScore": "50.15",
+    "id": "900537643",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900537643/real"
+  },
+  {
+    "rank": "54",
+    "imgSrc": "https://resource.hanteochart.io/album/900527190_s150.jpg?now=1739108435752",
+    "albumTitle": "HOW?: 미니앨범 2집, KiT ver.",
+    "artistName": "BOYNEXTDOOR",
+    "sales": "34",
+    "indexScore": "49.98",
+    "id": "900527190",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900527190/real"
+  },
+  {
+    "rank": "55",
+    "imgSrc": "https://resource.hanteochart.io/album/900527841_s150.jpg?now=1739108435752",
+    "albumTitle": "SEVENTEEN BEST ALBUM: 17 IS RIGHT HERE",
+    "artistName": "SEVENTEEN",
+    "sales": "19",
+    "indexScore": "49.78",
+    "id": "900527841",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900527841/real"
+  },
+  {
+    "rank": "56",
+    "imgSrc": "https://resource.hanteochart.io/album/900520567_s150.jpg?now=1739108435752",
+    "albumTitle": "樂-STAR: 미니앨범",
+    "artistName": "Stray Kids",
+    "sales": "45",
+    "indexScore": "49.50",
+    "id": "900520567",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900520567/real"
+  },
+  {
+    "rank": "57",
+    "imgSrc": "https://resource.hanteochart.io/album/900536115_s150.jpg?now=1739108435752",
+    "albumTitle": "ROMANCE : UNTOLD: daydream",
+    "artistName": "ENHYPEN",
+    "sales": "35",
+    "indexScore": "49.00",
+    "id": "900536115",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900536115/real"
+  },
+  {
+    "rank": "58",
+    "imgSrc": "https://resource.hanteochart.io/album/900529533_s150.jpg?now=1739108435752",
+    "albumTitle": "Supernatural, NJ X MURAKAMI Cross Bag ver.",
+    "artistName": "NewJeans",
+    "sales": "39",
+    "indexScore": "48.75",
+    "id": "900529533",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900529533/real"
+  },
+  {
+    "rank": "59",
+    "imgSrc": "https://resource.hanteochart.io/album/900536566_s150.jpg?now=1739108435752",
+    "albumTitle": "STRATEGY: 미니앨범 14집",
+    "artistName": "TWICE",
+    "sales": "37",
+    "indexScore": "48.10",
+    "id": "900536566",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/900536566/real"
+  },
+  {
+    "rank": "60",
+    "imgSrc": "https://resource.hanteochart.io/album/058701003_s150.jpg?now=1739108435752",
+    "albumTitle": "혼돈의 장 : FIGHT OR ESCAPE",
+    "artistName": "TOMORROW X TOGETHER",
+    "sales": "32",
+    "indexScore": "48.00",
+    "id": "058701003",
+    "linkSrc": "https://www.hanteochart.com/albumdetail/058701003/real"
   }
 ]

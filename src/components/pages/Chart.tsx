@@ -28,9 +28,30 @@ export default function Chart() {
     (async () => {
       const result = await fetch("/db/curation-contents.json");
       const jsonData = await result.json();
-      console.log("jsonData", jsonData);
+      // jsonData.map(data => ({
+      //   ...data,
+      //   link: data.
+      // }))
+
+      const parsedData = jsonData.map((data) => {
+        const id = data["imgSrc"].split("/")[4].split("_")[0];
+        const linkSrc = `https://www.hanteochart.com/albumdetail/${id}/real`;
+
+        return {
+          ...data,
+          id,
+          linkSrc,
+        };
+      });
+      console.log("parsedData", JSON.stringify(parsedData));
     })();
   }, []);
+
+
+
+
+
+  
   return (
     <>
       <Banner />
