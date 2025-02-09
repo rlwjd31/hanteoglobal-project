@@ -1,15 +1,5 @@
+import { CurationContentItemType } from "../types/curationContent.type";
 import { sleep } from "./sleep";
-
-type CurationContentItemsType = {
-  rank: number;
-  imgSrc: string;
-  albumTitle: string;
-  artistName: string;
-  sales: string;
-  indexScore: string;
-  id: number;
-  linkSrc: string;
-};
 
 type fakeFetchChartProps = {
   pageParam: number;
@@ -21,14 +11,14 @@ export const fakeFetchChart = async ({
   pageParam,
   pageDataLength,
   delay,
-}: fakeFetchChartProps): Promise<CurationContentItemsType[]> => {
+}: fakeFetchChartProps): Promise<CurationContentItemType[]> => {
   const url = "/db/curation-contents.json";
 
   try {
     const response = await fetch(url);
 
     if (response.ok) {
-      const data = (await response.json()) as CurationContentItemsType[];
+      const data = (await response.json()) as CurationContentItemType[];
       const [START, END] = [0, data.length];
       const startIndex =
         (pageParam - 1) * pageDataLength < START
