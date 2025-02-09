@@ -1,6 +1,6 @@
 import Card from "../atoms/Card";
+import Container from "../atoms/Container";
 import Banner from "../templates/banner/Banner";
-import something from "../../assets/db/curation-contents.json";
 import { useEffect } from "react";
 
 function ChartHeaderSection() {
@@ -34,40 +34,40 @@ export default function Chart() {
   return (
     <>
       <Banner />
-      <div className="flex flex-col flex-1 size-full mt-8">
+      <Container.FlexCol className="flex-1 size-full mt-8">
         <ChartHeaderSection />
         <section className="flex flex-col h-full">
           <Card className="text-neutral-900">
-            <div className="flex items-start">
-              <div className="flex translate-y-6 items-center text-lg font-bold">
+            <Container.FlexRow className="items-start">
+              <Container.FlexRow className="translate-y-6 items-center text-lg font-bold">
                 1
-              </div>
-              <div className="flex mx-4 size-20 rounded-md overflow-hidden shrink-0">
+              </Container.FlexRow>
+              <Container.FlexRow className="mx-4 size-20 rounded-md overflow-hidden shrink-0">
                 <img
                   className="size-full object-cover"
                   src="https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404"
                   alt="image1"
                 />
-              </div>
-            </div>
+              </Container.FlexRow>
+            </Container.FlexRow>
 
-            <div className="flex flex-1">
-              <div className="flex flex-col justify-center gap-1">
+            <Container.FlexRow className="flex-1">
+              <Container.FlexCol className="justify-center gap-1">
                 <p className="text-md break-all">
                   Caligo Pt.1: 미니앨범 3집, POCAALBUM Ver.
                 </p>
                 <p className="font-bold uppercase text-neutral-500">PLAVE</p>
-              </div>
-            </div>
-            <div className="flex max-w-[248px] flex-1 justify-between gap-[38px] text-md font-semibold">
+              </Container.FlexCol>
+            </Container.FlexRow>
+            <Container.FlexRow className="flex max-w-[248px] flex-1 justify-between gap-[38px] text-md font-semibold">
               <p className="flex items-center justify-end min-w-24">96,512</p>
               <p className="flex items-center justify-end min-w-[7rem]">
                 63,249.30
               </p>
-            </div>
+            </Container.FlexRow>
           </Card>
         </section>
-      </div>
+      </Container.FlexCol>
     </>
   );
 }
