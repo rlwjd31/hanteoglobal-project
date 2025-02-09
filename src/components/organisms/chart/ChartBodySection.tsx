@@ -12,7 +12,14 @@ export default function ChartBodySection() {
     pageParam: number;
     pageDataLength: number;
     isLoading: boolean;
-  }>({ contents: [], pageParam: 1, pageDataLength: 10, isLoading: true });
+    isLastPage: boolean;
+  }>({
+    contents: [],
+    pageParam: 1,
+    pageDataLength: 10,
+    isLoading: true,
+    isLastPage: false,
+  });
 
   const [initialLoading, setInitialLoading] = useState(true);
 
@@ -30,12 +37,13 @@ export default function ChartBodySection() {
 
       setCurationChartContent((prev) => ({
         ...prev,
-        contents: result,
+        contents: result.data,
         isLoading: false,
         pageParam: prev.pageParam + 1,
+        isLastPage: result.isLastPage,
       }));
     })();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchMoreCurationChartData = useCallback(
@@ -50,9 +58,10 @@ export default function ChartBodySection() {
 
       setCurationChartContent((prev) => ({
         ...prev,
-        contents: [...prev.contents, ...result],
+        contents: [...prev.contents, ...result.data],
         isLoading: false,
         pageParam: prev.pageParam + 1,
+        isLastPage: result.isLastPage,
       }));
     }, 100),
     [curationChartContent]
@@ -68,12 +77,10 @@ export default function ChartBodySection() {
         curationChartContent.contents.map((content) => (
           <CurationChartItem key={content.id} {...content} />
         ))}
-
-        {/* @FIXME: 마지막 data일 때도 계속 fetching을 하여 pageParam의 값이 증가하며 무한 state mutation이 발생 */}
-      {!curationChartContent.isLoading && (
+      {!curationChartContent.isLastPage && !curationChartContent.isLoading && (
         <CustomIntersectionObserver callback={fetchMoreCurationChartData} />
       )}
-      {curationChartContent.isLoading && (
+      {!curationChartContent.isLastPage && curationChartContent.isLoading && (
         <div className="flex justify-center items-center shrink-0 h-12">
           <ClipLoader key="ClipLoader" size={20} loading color="#643927" />
         </div>

@@ -7,12 +7,18 @@ type fakeFetchChartProps = {
   delay: number;
 };
 
+type ReturnTypeCurationContent = {
+  data: CurationContentItemType[];
+  isLastPage: boolean;
+};
+
 export const fakeFetchChart = async ({
   pageParam,
   pageDataLength,
   delay,
-}: fakeFetchChartProps): Promise<CurationContentItemType[]> => {
+}: fakeFetchChartProps): Promise<ReturnTypeCurationContent> => {
   const url = "/db/curation-contents.json";
+  let isLastPage = false;
 
   try {
     const response = await fetch(url);
@@ -27,14 +33,19 @@ export const fakeFetchChart = async ({
       const endIndex =
         pageParam * pageDataLength > END ? END : pageParam * pageDataLength;
 
+      if (endIndex === END) isLastPage = true;
+
       const slicedData = data.slice(startIndex, endIndex);
 
       await sleep(delay);
 
-      return slicedData;
+      return {
+        data: slicedData,
+        isLastPage,
+      };
     }
 
-    return [];
+    return { data: [], isLastPage: true };
   } catch (e) {
     throw new Error(
       `Failed to fetch chart data\nerrormessage: ${(e as Error).message}`
