@@ -1,0 +1,402 @@
+[
+  {
+    "rank": "1",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 1",
+    "artist": "Artist 1",
+    "sales": "1000",
+    "indexScore": "900.00"
+  },
+  {
+    "rank": "2",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 2",
+    "artist": "Artist 2",
+    "sales": "2000",
+    "indexScore": "1800.00"
+  },
+  {
+    "rank": "3",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 3",
+    "artist": "Artist 3",
+    "sales": "3000",
+    "indexScore": "2700.00"
+  },
+  {
+    "rank": "4",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 4",
+    "artist": "Artist 4",
+    "sales": "4000",
+    "indexScore": "3600.00"
+  },
+  {
+    "rank": "5",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 5",
+    "artist": "Artist 5",
+    "sales": "5000",
+    "indexScore": "4500.00"
+  },
+  {
+    "rank": "6",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 6",
+    "artist": "Artist 6",
+    "sales": "6000",
+    "indexScore": "5400.00"
+  },
+  {
+    "rank": "7",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 7",
+    "artist": "Artist 7",
+    "sales": "7000",
+    "indexScore": "6300.00"
+  },
+  {
+    "rank": "8",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 8",
+    "artist": "Artist 8",
+    "sales": "8000",
+    "indexScore": "7200.00"
+  },
+  {
+    "rank": "9",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 9",
+    "artist": "Artist 9",
+    "sales": "9000",
+    "indexScore": "8100.00"
+  },
+  {
+    "rank": "10",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 10",
+    "artist": "Artist 10",
+    "sales": "10000",
+    "indexScore": "9000.00"
+  },
+  {
+    "rank": "11",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 11",
+    "artist": "Artist 11",
+    "sales": "11000",
+    "indexScore": "9900.00"
+  },
+  {
+    "rank": "12",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 12",
+    "artist": "Artist 12",
+    "sales": "12000",
+    "indexScore": "10800.00"
+  },
+  {
+    "rank": "13",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 13",
+    "artist": "Artist 13",
+    "sales": "13000",
+    "indexScore": "11700.00"
+  },
+  {
+    "rank": "14",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 14",
+    "artist": "Artist 14",
+    "sales": "14000",
+    "indexScore": "12600.00"
+  },
+  {
+    "rank": "15",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 15",
+    "artist": "Artist 15",
+    "sales": "15000",
+    "indexScore": "13500.00"
+  },
+  {
+    "rank": "16",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 16",
+    "artist": "Artist 16",
+    "sales": "16000",
+    "indexScore": "14400.00"
+  },
+  {
+    "rank": "17",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 17",
+    "artist": "Artist 17",
+    "sales": "17000",
+    "indexScore": "15300.00"
+  },
+  {
+    "rank": "18",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 18",
+    "artist": "Artist 18",
+    "sales": "18000",
+    "indexScore": "16200.00"
+  },
+  {
+    "rank": "19",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 19",
+    "artist": "Artist 19",
+    "sales": "19000",
+    "indexScore": "17100.00"
+  },
+  {
+    "rank": "20",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 20",
+    "artist": "Artist 20",
+    "sales": "20000",
+    "indexScore": "18000.00"
+  },
+  {
+    "rank": "21",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 21",
+    "artist": "Artist 21",
+    "sales": "21000",
+    "indexScore": "18900.00"
+  },
+  {
+    "rank": "22",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 22",
+    "artist": "Artist 22",
+    "sales": "22000",
+    "indexScore": "19800.00"
+  },
+  {
+    "rank": "23",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 23",
+    "artist": "Artist 23",
+    "sales": "23000",
+    "indexScore": "20700.00"
+  },
+  {
+    "rank": "24",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 24",
+    "artist": "Artist 24",
+    "sales": "24000",
+    "indexScore": "21600.00"
+  },
+  {
+    "rank": "25",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 25",
+    "artist": "Artist 25",
+    "sales": "25000",
+    "indexScore": "22500.00"
+  },
+  {
+    "rank": "26",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 26",
+    "artist": "Artist 26",
+    "sales": "26000",
+    "indexScore": "23400.00"
+  },
+  {
+    "rank": "27",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 27",
+    "artist": "Artist 27",
+    "sales": "27000",
+    "indexScore": "24300.00"
+  },
+  {
+    "rank": "28",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 28",
+    "artist": "Artist 28",
+    "sales": "28000",
+    "indexScore": "25200.00"
+  },
+  {
+    "rank": "29",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 29",
+    "artist": "Artist 29",
+    "sales": "29000",
+    "indexScore": "26100.00"
+  },
+  {
+    "rank": "30",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 30",
+    "artist": "Artist 30",
+    "sales": "30000",
+    "indexScore": "27000.00"
+  },
+  {
+    "rank": "31",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 31",
+    "artist": "Artist 31",
+    "sales": "31000",
+    "indexScore": "27900.00"
+  },
+  {
+    "rank": "32",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 32",
+    "artist": "Artist 32",
+    "sales": "32000",
+    "indexScore": "28800.00"
+  },
+  {
+    "rank": "33",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 33",
+    "artist": "Artist 33",
+    "sales": "33000",
+    "indexScore": "29700.00"
+  },
+  {
+    "rank": "34",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 34",
+    "artist": "Artist 34",
+    "sales": "34000",
+    "indexScore": "30600.00"
+  },
+  {
+    "rank": "35",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 35",
+    "artist": "Artist 35",
+    "sales": "35000",
+    "indexScore": "31500.00"
+  },
+  {
+    "rank": "36",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 36",
+    "artist": "Artist 36",
+    "sales": "36000",
+    "indexScore": "32400.00"
+  },
+  {
+    "rank": "37",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 37",
+    "artist": "Artist 37",
+    "sales": "37000",
+    "indexScore": "33300.00"
+  },
+  {
+    "rank": "38",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 38",
+    "artist": "Artist 38",
+    "sales": "38000",
+    "indexScore": "34200.00"
+  },
+  {
+    "rank": "39",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 39",
+    "artist": "Artist 39",
+    "sales": "39000",
+    "indexScore": "35100.00"
+  },
+  {
+    "rank": "40",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 40",
+    "artist": "Artist 40",
+    "sales": "40000",
+    "indexScore": "36000.00"
+  },
+  {
+    "rank": "41",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 41",
+    "artist": "Artist 41",
+    "sales": "41000",
+    "indexScore": "36900.00"
+  },
+  {
+    "rank": "42",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 42",
+    "artist": "Artist 42",
+    "sales": "42000",
+    "indexScore": "37800.00"
+  },
+  {
+    "rank": "43",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 43",
+    "artist": "Artist 43",
+    "sales": "43000",
+    "indexScore": "38700.00"
+  },
+  {
+    "rank": "44",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 44",
+    "artist": "Artist 44",
+    "sales": "44000",
+    "indexScore": "39600.00"
+  },
+  {
+    "rank": "45",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 45",
+    "artist": "Artist 45",
+    "sales": "45000",
+    "indexScore": "40500.00"
+  },
+  {
+    "rank": "46",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 46",
+    "artist": "Artist 46",
+    "sales": "46000",
+    "indexScore": "41400.00"
+  },
+  {
+    "rank": "47",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 47",
+    "artist": "Artist 47",
+    "sales": "47000",
+    "indexScore": "42300.00"
+  },
+  {
+    "rank": "48",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 48",
+    "artist": "Artist 48",
+    "sales": "48000",
+    "indexScore": "43200.00"
+  },
+  {
+    "rank": "49",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 49",
+    "artist": "Artist 49",
+    "sales": "49000",
+    "indexScore": "44100.00"
+  },
+  {
+    "rank": "50",
+    "imgSrc": "https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404",
+    "albumTitle": "Album Title 50",
+    "artist": "Artist 50",
+    "sales": "50000",
+    "indexScore": "45000.00"
+  }
+]

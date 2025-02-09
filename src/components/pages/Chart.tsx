@@ -1,7 +1,8 @@
 import Card from "../atoms/Card";
 import Banner from "../templates/banner/Banner";
+import something from "../../assets/db/curation-contents.json";
 
-function CharBodySection() {
+function ChartHeaderSection() {
   return (
     <>
       <h2 className="text-neutral-800 font-bold text-2xl mt-2 mb-4">
@@ -26,7 +27,7 @@ export default function Chart() {
     <>
       <Banner />
       <div className="flex flex-col flex-1 size-full mt-8">
-        <CharBodySection />
+        <ChartHeaderSection />
         <section className="flex flex-col h-full">
           <Card className="text-neutral-900">
             <div className="flex items-start">
