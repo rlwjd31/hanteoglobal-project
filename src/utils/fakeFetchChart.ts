@@ -29,7 +29,6 @@ export const fakeFetchChart = async ({
 
       const slicedData = data.slice(startIndex, endIndex);
 
-      console.log(slicedData);
       await sleep(delay);
 
       return slicedData;
@@ -38,7 +37,7 @@ export const fakeFetchChart = async ({
     return [];
   } catch (e) {
     throw new Error(
-      `Failed to fetch chart data\nterrormessage: ${(e as Error).message}`
+      `Failed to fetch chart data\nerrormessage: ${(e as Error).message}`
     );
   }
 };

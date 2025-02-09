@@ -1,6 +1,7 @@
+import { CurationContentItemType } from "../../types/curationContent.type";
 import { fakeFetchChart } from "../../utils/fakeFetchChart";
-import Card from "../atoms/Card";
 import Container from "../atoms/Container";
+import CurationChartItem from "../molecules/CurationChartItem";
 import Banner from "../templates/banner/Banner";
 import { useEffect, useState } from "react";
 
@@ -25,13 +26,19 @@ function ChartHeaderSection() {
 }
 
 export default function Chart() {
+  const [curationChartContent, setCurationChartContent] = useState<
+    CurationContentItemType[]
+  >([]);
+
   useEffect(() => {
     (async () => {
       const result = await fakeFetchChart({
         pageParam: 1,
         pageDataLength: 10,
-        delay: 2000,
+        delay: 500,
       });
+
+      setCurationChartContent((prev) => [...result]);
     })();
   }, []);
 
@@ -41,35 +48,10 @@ export default function Chart() {
       <Container.FlexCol className="flex-1 size-full mt-8">
         <ChartHeaderSection />
         <section className="flex flex-col h-full">
-          <Card className="text-neutral-900">
-            <Container.FlexRow className="items-start">
-              <Container.FlexRow className="translate-y-6 items-center text-lg font-bold">
-                1
-              </Container.FlexRow>
-              <Container.FlexRow className="mx-4 size-20 rounded-md overflow-hidden shrink-0">
-                <img
-                  className="size-full object-cover"
-                  src="https://resource.hanteochart.io/album/900540088_s150.jpg?now=1738969210404"
-                  alt="image1"
-                />
-              </Container.FlexRow>
-            </Container.FlexRow>
-
-            <Container.FlexRow className="flex-1">
-              <Container.FlexCol className="justify-center gap-1">
-                <p className="text-md break-all">
-                  Caligo Pt.1: 미니앨범 3집, POCAALBUM Ver.
-                </p>
-                <p className="font-bold uppercase text-neutral-500">PLAVE</p>
-              </Container.FlexCol>
-            </Container.FlexRow>
-            <Container.FlexRow className="flex max-w-[248px] flex-1 justify-between gap-[38px] text-md font-semibold">
-              <p className="flex items-center justify-end min-w-24">96,512</p>
-              <p className="flex items-center justify-end min-w-[7rem]">
-                63,249.30
-              </p>
-            </Container.FlexRow>
-          </Card>
+          {(curationChartContent ?? []) &&
+            curationChartContent.map((content) => (
+              <CurationChartItem key={content.id} {...content} />
+            ))}
         </section>
       </Container.FlexCol>
     </>

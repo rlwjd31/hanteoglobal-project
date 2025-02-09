@@ -7,7 +7,9 @@ import { layoutContainerWidthStyle } from "../RootLayout";
 
 export default function Header() {
   return (
-    <header className={`fixed bg-header h-header ${layoutContainerWidthStyle}`}>
+    <header
+      className={`fixed z-50 bg-header h-header ${layoutContainerWidthStyle}`}
+    >
       <nav className="h-full">
         <Swiper
           className="flex flex-row h-full items-center justify-between font-bold"
