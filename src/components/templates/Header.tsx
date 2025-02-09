@@ -8,7 +8,7 @@ import { layoutContainerWidthStyle } from "../RootLayout";
 export default function Header() {
   return (
     <header
-      className={`fixed z-50 bg-header h-header ${layoutContainerWidthStyle}`}
+      className={`absolute top-0 left-0 z-50 bg-header h-header ${layoutContainerWidthStyle}`}
     >
       <nav className="h-full">
         <Swiper
