@@ -1,5 +1,5 @@
 import Container from "../atoms/Container";
-import ChartBodySection from "../organisms/chart/CharBodySection";
+import ChartBodySection from "../organisms/chart/ChartBodySection";
 import ChartHeaderSection from "../organisms/chart/ChartHeaderSection";
 import Banner from "../templates/banner/Banner";
 
