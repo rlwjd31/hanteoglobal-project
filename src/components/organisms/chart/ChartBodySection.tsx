@@ -68,6 +68,8 @@ export default function ChartBodySection() {
         curationChartContent.contents.map((content) => (
           <CurationChartItem key={content.id} {...content} />
         ))}
+
+        {/* @FIXME: 마지막 data일 때도 계속 fetching을 하여 pageParam의 값이 증가하며 무한 state mutation이 발생 */}
       {!curationChartContent.isLoading && (
         <CustomIntersectionObserver callback={fetchMoreCurationChartData} />
       )}
