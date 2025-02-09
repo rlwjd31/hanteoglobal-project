@@ -1,6 +1,7 @@
 import Card from "../atoms/Card";
 import Banner from "../templates/banner/Banner";
 import something from "../../assets/db/curation-contents.json";
+import { useEffect } from "react";
 
 function ChartHeaderSection() {
   return (
@@ -23,6 +24,13 @@ function ChartHeaderSection() {
 }
 
 export default function Chart() {
+  useEffect(() => {
+    (async () => {
+      const result = await fetch("/db/curation-contents.json");
+      const jsonData = await result.json();
+      console.log("jsonData", jsonData);
+    })();
+  }, []);
   return (
     <>
       <Banner />
