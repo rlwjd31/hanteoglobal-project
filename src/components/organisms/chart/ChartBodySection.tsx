@@ -22,6 +22,7 @@ export default function ChartBodySection() {
   });
 
   const [initialLoading, setInitialLoading] = useState(true);
+  const commonHeight = "h-12";
 
   useEffect(() => {
     (async () => {
@@ -30,7 +31,7 @@ export default function ChartBodySection() {
       const result = await fakeFetchChart({
         pageParam: curationChartContent.pageParam,
         pageDataLength: curationChartContent.pageDataLength,
-        delay: 1000,
+        delay: 500,
       });
 
       setInitialLoading(false);
@@ -53,7 +54,7 @@ export default function ChartBodySection() {
       const result = await fakeFetchChart({
         pageParam: curationChartContent.pageParam,
         pageDataLength: curationChartContent.pageDataLength,
-        delay: 1000,
+        delay: 500,
       });
 
       setCurationChartContent((prev) => ({
@@ -78,10 +79,15 @@ export default function ChartBodySection() {
           <CurationChartItem key={content.id} {...content} />
         ))}
       {!curationChartContent.isLastPage && !curationChartContent.isLoading && (
-        <CustomIntersectionObserver callback={fetchMoreCurationChartData} />
+        <CustomIntersectionObserver
+          callback={fetchMoreCurationChartData}
+          className={commonHeight}
+        />
       )}
       {!curationChartContent.isLastPage && curationChartContent.isLoading && (
-        <div className="flex justify-center items-center shrink-0 h-12">
+        <div
+          className={`flex justify-center items-center shrink-0 h-12 ${commonHeight}`}
+        >
           <ClipLoader key="ClipLoader" size={20} loading color="#643927" />
         </div>
       )}
