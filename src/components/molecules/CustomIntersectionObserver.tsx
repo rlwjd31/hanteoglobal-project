@@ -1,4 +1,10 @@
-import { forwardRef, useEffect, useRef, ComponentProps } from "react";
+import {
+  forwardRef,
+  useEffect,
+  useRef,
+  ComponentProps,
+  useCallback,
+} from "react";
 
 type ObserverTargetProps = Omit<ComponentProps<"div">, "ref">;
 
@@ -6,7 +12,7 @@ export const ObserverTarget = forwardRef<HTMLDivElement, ObserverTargetProps>(
   ({ children = null, className = "", ...others }, ref) => (
     <div
       ref={ref}
-      className={`flex w-full h-12 items-center justify-center shrink-0 text-white ${className}`}
+      className={`flex w-full h-8 items-center justify-center shrink-0 text-white ${className}`}
       {...others}
     >
       {children}
@@ -24,18 +30,21 @@ export default function CustomIntersectionObserver({
   ...others
 }: CustomIntersectionObserverProps) {
   const targetRef = useRef<HTMLDivElement>(null);
+  const memoizedCallback = useCallback(callback, [callback]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries: IntersectionObserverEntry[]) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) callback();
+          const el = entry.target;
+          console.log("el", el);
+          if (entry.isIntersecting) memoizedCallback();
         });
       },
       {
         root: null,
-        rootMargin: "10px",
-        threshold: 0,
+        rootMargin: "0px",
+        threshold: 1,
       }
     );
 
@@ -48,7 +57,7 @@ export default function CustomIntersectionObserver({
         observer.unobserve(copyObserverTargetElement.current);
       }
     };
-  }, [callback]);
+  }, [memoizedCallback]);
 
   return (
     <ObserverTarget ref={targetRef} {...others}>

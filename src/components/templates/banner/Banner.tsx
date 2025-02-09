@@ -63,7 +63,7 @@ export default function Banner() {
   };
 
   return (
-    <div className="flex flex-col size-full max-h-64">
+    <div className="flex flex-col size-full max-h-80">
       <Slider {...settings} ref={sliderRef}>
         {bannerInfo.map((banner) => (
           <div key={banner.id}>
