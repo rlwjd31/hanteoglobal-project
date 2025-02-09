@@ -1,4 +1,3 @@
-
 .swiper-pagination-bullet-active {
   background-color: #d8455d !important;
 }
@@ -28,10 +27,4 @@
 .slick-slide div {
   width: 100%;
   height: 100%;
-}
-
-.slick-slide div img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
 }

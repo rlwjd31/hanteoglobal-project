@@ -1,3 +1,4 @@
+import Img from "../atoms/Img";
 import { layoutContainerWidthStyle } from "../RootLayout";
 
 export default function Footer() {
@@ -23,8 +24,7 @@ export default function Footer() {
       </div>
       <div>
         <div className="w-32 h-20">
-          <img
-            className="img"
+          <Img
             src="https://www.hanteochart.com/static/media/copyright_logo_en.d6b2417c3c3352031e33.png"
             alt="저작권 OK 로고"
           />

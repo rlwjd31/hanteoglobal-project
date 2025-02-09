@@ -7,6 +7,7 @@ import { bannerInfo } from "../../../contants/banner";
 import { Settings } from "react-slick";
 import "./banner.style.css";
 import { useRef, useState } from "react";
+import Img from "../../atoms/Img";
 
 type PaginationBulletsProps = {
   length: number;
@@ -66,7 +67,7 @@ export default function Banner() {
         {bannerInfo.map((banner) => (
           <div key={banner.id}>
             <a href={banner.href} target="_blank">
-              <img src={banner.imgSrc} />
+              <Img src={banner.imgSrc} className="object-fill" />
             </a>
           </div>
         ))}

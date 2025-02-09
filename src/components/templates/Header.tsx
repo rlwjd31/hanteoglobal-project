@@ -1,14 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { routeInfo } from "../../contants/route";
-import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/swiper-bundle.css";
-import { useRef } from "react";
 import { layoutContainerWidthStyle } from "../RootLayout";
 
 export default function Header() {
-  const swiperRef = useRef<SwiperClass>(null);
-
   return (
     <header className={`fixed bg-header h-header ${layoutContainerWidthStyle}`}>
       <nav className="h-full">
