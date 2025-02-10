@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   animate,
   motion,
@@ -21,9 +21,10 @@ export default function PageWrapper({
   nextPath: string;
   prevPath: string;
 }) {
-  const OFFSET = 300;
+  const OFFSET = 200;
   const navigate = useNavigate();
   const x = useMotionValue(0);
+  const location = useLocation();
   const [mainWidth, setMainWidth] = useState(768);
 
   useLayoutEffect(() => {
@@ -42,51 +43,55 @@ export default function PageWrapper({
     }
   }, []);
 
-  // @FIXME: 전역 상태인 x(useMotionValue)를 사용함에 따라 x.set(0)을 하게되면 페이지가 좌우로 이동하여
-  // 깜빡거리는 이슈가 발생
   const handleDragEnd = async (
     _event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
   ) => {
     if (info.offset.x > OFFSET) {
       // 오른쪽으로 드래그
-      animate(x, mainWidth, {
+      await animate(x, mainWidth, {
         duration: 0.4,
-        onComplete: () => {
-          navigate(prevPath);
-          x.set(0);
-        },
+      });
+
+      navigate(prevPath);
+      requestAnimationFrame(() => {
+        x.set(0);
       });
     } else if (info.offset.x < -OFFSET) {
       // 왼쪽으로 드래그
-      animate(x, -mainWidth, {
+
+      await animate(x, -mainWidth, {
         duration: 0.4,
-        onComplete: () => {
-          navigate(nextPath);
-          x.set(0);
-        },
+      });
+
+      navigate(nextPath);
+      requestAnimationFrame(() => {
+        x.set(0);
       });
     } else {
-      animate(x, 0, { duration: 0.4 }); // 300만큼 이동하지 않았을 때 원래 위치로
+      await animate(x, 0, { duration: 0.4 }); // OFFSET만큼 이동하지 않았을 때 원래 위치로
     }
   };
 
   return (
-    <div className="grid grid-cols-1 relative grid-rows-1 size-full">
+    <div className="relative size-full grid grid-cols-1 grid-rows-1 overflow-hidden">
       {/* 현재 페이지 */}
       <motion.div
-        className="bg-white z-20"
+        key={location.pathname}
+        className="size-full bg-white z-10"
         style={{ x }}
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
         onDragEnd={handleDragEnd}
+        transition={{ duration: 1, ease: "easeOut" }}
       >
         {currentPage}
       </motion.div>
 
       {/* 다음 페이지 */}
       <motion.div
-        className="absolute size-full z-30"
+        key={nextPath}
+        className="absolute top-0 left-0 size-full"
         style={{
           x: useTransform(x, (value) => value + mainWidth),
         }}
@@ -96,7 +101,8 @@ export default function PageWrapper({
 
       {/* 이전 페이지 */}
       <motion.div
-        className="absolute size-full z-10"
+        key={prevPath}
+        className="absolute top-0 left-0 size-full"
         style={{
           x: useTransform(x, (value) => value - mainWidth),
         }}

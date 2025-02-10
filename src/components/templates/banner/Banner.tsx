@@ -25,7 +25,7 @@ function PaginationBullets({
 }: PaginationBulletsProps) {
   return (
     <Container.FlexRow
-      className={`w-full py-2 gap-2 items-center justify-center z-50 mt-2 ${className}`}
+      className={`w-full py-2 gap-2 items-center justify-center mt-2 ${className}`}
     >
       {Array(length)
         .fill(0)
@@ -47,7 +47,6 @@ export default function Banner() {
   const sliderRef = useRef<Slider>(null);
 
   const settings: Settings = {
-    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
