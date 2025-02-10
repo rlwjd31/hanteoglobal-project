@@ -19,12 +19,10 @@ export default function ChartBodySection() {
     isLoading: false,
     isLastPage: false,
   });
-
   const [initialLoading, setInitialLoading] = useState(true);
   const firstMount = useRef<boolean>(true);
-  // const [isFirstMount, setIsFirstMount] = useState(true);
-
   const intersectingCount = useRef<number>(0);
+
   const commonHeight = "h-12";
 
   useEffect(() => {
@@ -42,7 +40,6 @@ export default function ChartBodySection() {
           return {
             ...prev,
             contents: [...result.data],
-            isLoading: false,
             pageParam: prev.pageParam + 1,
             isLastPage: result.isLastPage,
           };
@@ -65,8 +62,9 @@ export default function ChartBodySection() {
       delay: 500,
     });
 
+    intersectingCount.current = 0;
+
     setCurationChartContent((prev) => {
-      intersectingCount.current = 0;
       return {
         ...prev,
         contents: [...prev.contents, ...result.data],
@@ -76,8 +74,6 @@ export default function ChartBodySection() {
       };
     });
   };
-
-  console.log("rendering => firstMount.current", firstMount.current);
 
   return initialLoading ? (
     <div className="flex h-full justify-center items-center">
@@ -92,7 +88,6 @@ export default function ChartBodySection() {
       {!curationChartContent.isLastPage && !curationChartContent.isLoading && (
         <CustomIntersectionObserver
           callback={() => {
-            console.log("❌in intersecting");
             intersectingCount.current += 1;
             if (intersectingCount.current > 1) return;
 
