@@ -18,7 +18,7 @@ const routes: RouteObject[] = [
     element: <RootLayout />,
     children: [
       {
-        path: routeInfo.chart.path,
+        index: true,
         element: <Chart />,
       },
       {

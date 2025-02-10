@@ -1,7 +1,7 @@
 export const routeInfo = {
   chart: {
     id: "routeInfo1",
-    path: "/charts",
+    path: "/",
     content: "차트",
   },
   whook: {
