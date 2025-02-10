@@ -53,6 +53,8 @@ export default function PageWrapper({
   }, []);
   const location = useLocation();
 
+
+  // @FIXME: gesture로 drag후 다음 페이지가 아닌 다다음 페이지가 rendering되는 이슈
   const handleDragEnd = async (
     _event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
