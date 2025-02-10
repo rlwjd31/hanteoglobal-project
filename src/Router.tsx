@@ -12,6 +12,7 @@ import Store from "./components/pages/Store";
 import ChargeShop from "./components/pages/ChargeShop";
 import RootLayout from "./components/RootLayout";
 import PageWrapper from "./components/molecules/PageWrapper";
+import PageNotFound from "./components/pages/PageNotFound";
 
 const routes: RouteObject[] = [
   {
@@ -89,6 +90,10 @@ const routes: RouteObject[] = [
             prevPath={routeInfo.store.path}
           />
         ),
+      },
+      {
+        path: "*",
+        element: <PageNotFound />,
       },
     ],
   },
