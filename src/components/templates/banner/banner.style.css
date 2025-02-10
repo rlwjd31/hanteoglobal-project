@@ -21,7 +21,6 @@
 .slick-track {
   display: flex;
   height: 100%;
-  background-color: aqua;
 }
 
 .slick-slide div {
