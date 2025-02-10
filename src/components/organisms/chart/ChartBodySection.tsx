@@ -49,6 +49,9 @@ export default function ChartBodySection() {
     });
   };
 
+  // error handling test code false -> 30%
+  if (Math.random() < 0.3) throw new Error("test reset error boundary");
+
   return (
     <section className="flex flex-col h-full overflow-auto gap-y-4 px-2 pb-2">
       {curationChartContent.contents.map((content) => (
