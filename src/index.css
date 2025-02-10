@@ -10,3 +10,15 @@
 html {
   background-color: #fff;
 }
+
+@media (min-width: 480px) and (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
