@@ -8,7 +8,7 @@ export default function ChartHeaderSection() {
       </h2>
       <Container.FlexRow className="justify-between pl-[46px] text-center text-sm font-medium text-neutral-600 mb-4">
         <p className="w-[27.6rem] text-left">Album Info</p>
-        <Container.FlexRow className="flex-1 gap-8 justify-between max-w-[240px]">
+        <Container.FlexRow className="flex-1 gap-1 justify-between max-w-[212px]">
           <p className="min-w-24">Sales Amount</p>
           <Container className="min-w-[7rem]">
             <p>Physical record</p>

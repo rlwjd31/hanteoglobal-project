@@ -8,9 +8,9 @@ import { ErrorBoundary, FallbackProps } from "react-error-boundary";
 
 function Loading() {
   return (
-    <div className="flex h-full justify-center items-center">
+    <Container.FlexRow className="h-full justify-center items-center">
       <ClipLoader key="ClipLoader" size={40} loading color="#643927" />
-    </div>
+    </Container.FlexRow>
   );
 }
 
@@ -18,7 +18,7 @@ function ErrorFallBack({ error, resetErrorBoundary }: FallbackProps) {
   console.error(error);
 
   return (
-    <div className="flex size-full items-center gap-4 justify-center">
+    <Container.FlexRow className="size-full items-center gap-4 justify-center">
       <p className="font-semibold text-2xl">something went wrong...🥵🥵🥵</p>
       <button
         className="py-2 px-4 text-white bg-neutral-400 rounded-md cursor-pointer hover:bg-neutral-300"
@@ -26,7 +26,7 @@ function ErrorFallBack({ error, resetErrorBoundary }: FallbackProps) {
       >
         retry
       </button>
-    </div>
+    </Container.FlexRow>
   );
 }
 

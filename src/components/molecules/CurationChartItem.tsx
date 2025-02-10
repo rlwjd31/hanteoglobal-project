@@ -30,7 +30,7 @@ export default function CurationChartItem({
             <p className="font-bold uppercase text-neutral-500">{artistName}</p>
           </Container.FlexCol>
         </Container.FlexRow>
-        <Container.FlexRow className="flex max-w-[248px] flex-1 justify-between gap-[38px] text-md font-semibold">
+        <Container.FlexRow className="flex max-w-[212px] flex-1 justify-between text-md font-semibold">
           <p className="flex items-center justify-end min-w-24">{sales}</p>
           <p className="flex items-center justify-end min-w-[7rem]">
             {indexScore}
