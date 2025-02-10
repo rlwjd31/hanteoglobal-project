@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   animate,
   motion,
@@ -6,7 +6,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { ReactNode, useEffect, useLayoutEffect, useState } from "react";
+import { ReactNode, useLayoutEffect, useState } from "react";
 
 export default function PageWrapper({
   currentPage,
@@ -42,19 +42,6 @@ export default function PageWrapper({
     }
   }, []);
 
-  useEffect(() => {
-    const id = setTimeout(() => {
-      x.set(0);
-    }, 100);
-
-    return () => {
-      clearTimeout(id);
-    };
-  }, []);
-  const location = useLocation();
-
-
-  // @FIXME: gesture로 drag후 다음 페이지가 아닌 다다음 페이지가 rendering되는 이슈
   const handleDragEnd = async (
     _event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
@@ -63,20 +50,24 @@ export default function PageWrapper({
       // 오른쪽으로 드래그
       animate(x, mainWidth, {
         duration: 0.4,
-        onComplete: () => navigate(prevPath),
+        onComplete: () => {
+          navigate(prevPath);
+          x.set(0);
+        },
       });
     } else if (info.offset.x < -OFFSET) {
       // 왼쪽으로 드래그
-      await animate(x, -mainWidth, {
+      animate(x, -mainWidth, {
         duration: 0.4,
-        onComplete: () => navigate(nextPath),
+        onComplete: () => {
+          navigate(nextPath);
+          x.set(0);
+        },
       });
     } else {
       animate(x, 0, { duration: 0.4 }); // 300만큼 이동하지 않았을 때 원래 위치로
     }
   };
-
-  console.log("render in PageWrapper", location.pathname);
 
   return (
     <div className="grid grid-cols-1 relative grid-rows-1 size-full">
