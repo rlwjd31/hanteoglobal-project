@@ -3,12 +3,12 @@ import Header from "./templates/Header";
 import Footer from "./templates/Footer";
 import Container from "./atoms/Container";
 import { AnimatePresence } from "framer-motion";
-export const layoutContainerWidthStyle = "w-full max-w-[768px] min-w-[425px]";
+export const layoutContainerWidthStyle = "w-full max-w-[48rem] min-w-[26.5625rem]";
 
 export default function RootLayout() {
   return (
     <Container.FlexRow
-      className={`relative justify-center h-dvh min-h-[900px] px-2`}
+      className={`relative justify-center h-dvh min-h-[56.25rem] px-2`}
     >
       <Container
         className={`relative h-full bg-white mx-auto pt-(--height-header) pb-(--height-footer) ${layoutContainerWidthStyle}`}
