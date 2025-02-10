@@ -1,10 +1,9 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CurationContentItemType } from "../../../types/curationContent.type";
 import { fakeFetchChart } from "../../../utils/fakeFetchChart";
 import CurationChartItem from "../../molecules/CurationChartItem";
 import CustomIntersectionObserver from "../../molecules/CustomIntersectionObserver";
 import { ClipLoader } from "react-spinners";
-import { debounce } from "../../../utils/debounce";
 
 export default function ChartBodySection() {
   const [curationChartContent, setCurationChartContent] = useState<{
@@ -17,56 +16,68 @@ export default function ChartBodySection() {
     contents: [],
     pageParam: 1,
     pageDataLength: 10,
-    isLoading: true,
+    isLoading: false,
     isLastPage: false,
   });
 
   const [initialLoading, setInitialLoading] = useState(true);
+  const firstMount = useRef<boolean>(true);
+  // const [isFirstMount, setIsFirstMount] = useState(true);
+
+  const intersectingCount = useRef<number>(0);
   const commonHeight = "h-12";
 
   useEffect(() => {
-    (async () => {
-      setCurationChartContent((prev) => ({ ...prev, isLoading: true }));
+    if (firstMount.current) {
+      (async () => {
+        const result = await fakeFetchChart({
+          pageParam: curationChartContent.pageParam,
+          pageDataLength: curationChartContent.pageDataLength,
+          delay: 500,
+        });
 
-      const result = await fakeFetchChart({
-        pageParam: curationChartContent.pageParam,
-        pageDataLength: curationChartContent.pageDataLength,
-        delay: 500,
-      });
+        setInitialLoading(false);
 
-      setInitialLoading(false);
+        setCurationChartContent((prev) => {
+          return {
+            ...prev,
+            contents: [...result.data],
+            isLoading: false,
+            pageParam: prev.pageParam + 1,
+            isLastPage: result.isLastPage,
+          };
+        });
+      })();
 
-      setCurationChartContent((prev) => ({
-        ...prev,
-        contents: result.data,
-        isLoading: false,
-        pageParam: prev.pageParam + 1,
-        isLastPage: result.isLastPage,
-      }));
-    })();
+      return () => {
+        firstMount.current = false;
+      };
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const fetchMoreCurationChartData = useCallback(
-    debounce(async () => {
-      setCurationChartContent((prev) => ({ ...prev, isLoading: true }));
+  const fetchMoreCurationChartData = async () => {
+    setCurationChartContent((prev) => ({ ...prev, isLoading: true }));
 
-      const result = await fakeFetchChart({
-        pageParam: curationChartContent.pageParam,
-        pageDataLength: curationChartContent.pageDataLength,
-        delay: 500,
-      });
+    const result = await fakeFetchChart({
+      pageParam: curationChartContent.pageParam,
+      pageDataLength: curationChartContent.pageDataLength,
+      delay: 500,
+    });
 
-      setCurationChartContent((prev) => ({
+    setCurationChartContent((prev) => {
+      intersectingCount.current = 0;
+      return {
         ...prev,
         contents: [...prev.contents, ...result.data],
         isLoading: false,
         pageParam: prev.pageParam + 1,
         isLastPage: result.isLastPage,
-      }));
-    }, 100),
-    [curationChartContent]
-  );
+      };
+    });
+  };
+
+  console.log("rendering => firstMount.current", firstMount.current);
 
   return initialLoading ? (
     <div className="flex h-full justify-center items-center">
@@ -80,7 +91,13 @@ export default function ChartBodySection() {
         ))}
       {!curationChartContent.isLastPage && !curationChartContent.isLoading && (
         <CustomIntersectionObserver
-          callback={fetchMoreCurationChartData}
+          callback={() => {
+            console.log("❌in intersecting");
+            intersectingCount.current += 1;
+            if (intersectingCount.current > 1) return;
+
+            fetchMoreCurationChartData();
+          }}
           className={commonHeight}
         />
       )}
