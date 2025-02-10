@@ -3,7 +3,7 @@ import { sleep } from "./sleep";
 
 type fakeFetchChartProps = {
   pageParam: number;
-  pageDataLength: number;
+  pageDataLength?: number;
   delay: number;
 };
 
@@ -14,7 +14,7 @@ type ReturnTypeCurationContent = {
 
 export const fakeFetchChart = async ({
   pageParam,
-  pageDataLength,
+  pageDataLength = 10,
   delay,
 }: fakeFetchChartProps): Promise<ReturnTypeCurationContent> => {
   const url = "/db/curation-contents.json";

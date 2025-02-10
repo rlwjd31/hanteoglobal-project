@@ -7,7 +7,6 @@ import { ClipLoader } from "react-spinners";
 
 const initialCurationChartContentPromise = fakeFetchChart({
   pageParam: 1,
-  pageDataLength: 10,
   delay: 500,
 });
 
@@ -32,7 +31,6 @@ export default function ChartBodySection() {
 
     const result = await fakeFetchChart({
       pageParam: curationChartContent.pageParam,
-      pageDataLength: 10,
       delay: 500,
     });
 
