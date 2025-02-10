@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   animate,
   motion,
@@ -6,22 +6,27 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { useEffect, useState } from "react";
-import { routeInfo } from "../contants/route";
+import { ReactNode, useEffect, useState } from "react";
 
 export default function PageWrapper({
   currentPage,
   nextPage,
   prevPage,
+  nextPath,
+  prevPath,
 }: {
-  currentPage: React.ReactNode;
-  nextPage: React.ReactNode;
-  prevPage: React.ReactNode;
+  currentPage: ReactNode;
+  nextPage: ReactNode;
+  prevPage: ReactNode;
+  nextPath: string;
+  prevPath: string;
 }) {
   const OFFSET = 300;
   const navigate = useNavigate();
   const x = useMotionValue(0);
   const [mainWidth, setMainWidth] = useState(768);
+
+  // TODO: 정확한 DOM에 접근하기 위해 useLayoutEffect 사용
   useEffect(() => {
     const mainElement = document.querySelector("main");
     if (mainElement) {
@@ -38,7 +43,18 @@ export default function PageWrapper({
     }
   }, []);
 
-  const handleDragEnd = (
+  useEffect(() => {
+    const id = setTimeout(() => {
+      x.set(0);
+    }, 100);
+
+    return () => {
+      clearTimeout(id);
+    };
+  }, []);
+  const location = useLocation();
+
+  const handleDragEnd = async (
     _event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
   ) => {
@@ -46,24 +62,26 @@ export default function PageWrapper({
       // 오른쪽으로 드래그
       animate(x, mainWidth, {
         duration: 0.4,
-        onComplete: () => navigate(routeInfo.chargeShop.path), // navigation상 이전 페이지
+        onComplete: () => navigate(prevPath),
       });
     } else if (info.offset.x < -OFFSET) {
       // 왼쪽으로 드래그
-      animate(x, -mainWidth, {
+      await animate(x, -mainWidth, {
         duration: 0.4,
-        onComplete: () => navigate(routeInfo.whook.path), // navigation상 다음 페이지
+        onComplete: () => navigate(nextPath),
       });
     } else {
       animate(x, 0, { duration: 0.4 }); // 300만큼 이동하지 않았을 때 원래 위치로
     }
   };
 
+  console.log("render in PageWrapper", location.pathname);
+
   return (
     <div className="grid grid-cols-1 relative grid-rows-1 size-full">
       {/* 현재 페이지 */}
       <motion.div
-        className="bg-white"
+        className="bg-white z-20"
         style={{ x }}
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
@@ -74,22 +92,20 @@ export default function PageWrapper({
 
       {/* 다음 페이지 */}
       <motion.div
-        className="absolute size-full"
+        className="absolute size-full z-30"
         style={{
           x: useTransform(x, (value) => value + mainWidth),
         }}
-        initial={{ x: window.innerWidth }}
       >
         {nextPage}
       </motion.div>
 
       {/* 이전 페이지 */}
       <motion.div
-        className="absolute size-full"
+        className="absolute size-full z-10"
         style={{
           x: useTransform(x, (value) => value - mainWidth),
         }}
-        initial={{ x: window.innerWidth }}
       >
         {prevPage}
       </motion.div>

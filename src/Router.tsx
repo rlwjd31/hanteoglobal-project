@@ -11,6 +11,7 @@ import News from "./components/pages/News";
 import Store from "./components/pages/Store";
 import ChargeShop from "./components/pages/ChargeShop";
 import RootLayout from "./components/RootLayout";
+import PageWrapper from "./components/molecules/PageWrapper";
 
 const routes: RouteObject[] = [
   {
@@ -19,27 +20,75 @@ const routes: RouteObject[] = [
     children: [
       {
         index: true,
-        element: <Chart />,
+        element: (
+          <PageWrapper
+            currentPage={<Chart />}
+            nextPage={<Whook />}
+            prevPage={<ChargeShop />}
+            nextPath={routeInfo.whook.path}
+            prevPath={routeInfo.chargeShop.path}
+          />
+        ),
       },
       {
         path: routeInfo.whook.path,
-        element: <Whook />,
+        element: (
+          <PageWrapper
+            currentPage={<Whook />}
+            nextPage={<Events />}
+            prevPage={<Chart />}
+            nextPath={routeInfo.events.path}
+            prevPath={routeInfo.chart.path}
+          />
+        ),
       },
       {
         path: routeInfo.events.path,
-        element: <Events />,
+        element: (
+          <PageWrapper
+            currentPage={<Events />}
+            nextPage={<News />}
+            prevPage={<Whook />}
+            nextPath={routeInfo.news.path}
+            prevPath={routeInfo.whook.path}
+          />
+        ),
       },
       {
         path: routeInfo.news.path,
-        element: <News />,
+        element: (
+          <PageWrapper
+            currentPage={<News />}
+            nextPage={<Store />}
+            prevPage={<Events />}
+            nextPath={routeInfo.store.path}
+            prevPath={routeInfo.events.path}
+          />
+        ),
       },
       {
         path: routeInfo.store.path,
-        element: <Store />,
+        element: (
+          <PageWrapper
+            currentPage={<Store />}
+            nextPage={<ChargeShop />}
+            prevPage={<News />}
+            nextPath={routeInfo.chargeShop.path}
+            prevPath={routeInfo.news.path}
+          />
+        ),
       },
       {
         path: routeInfo.chargeShop.path,
-        element: <ChargeShop />,
+        element: (
+          <PageWrapper
+            currentPage={<ChargeShop />}
+            nextPage={<Chart />}
+            prevPage={<Store />}
+            nextPath={routeInfo.chart.path}
+            prevPath={routeInfo.store.path}
+          />
+        ),
       },
     ],
   },

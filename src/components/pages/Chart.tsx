@@ -5,9 +5,7 @@ import ChartHeaderSection from "../organisms/chart/ChartHeaderSection";
 import Banner from "../templates/banner/Banner";
 import { ClipLoader } from "react-spinners";
 import { ErrorBoundary, FallbackProps } from "react-error-boundary";
-import Whook from "./Whook.tsx";
-import PageWrapper from "../PageWrapper.tsx";
-import ChargeShop from "./ChargeShop.tsx";
+
 function Loading() {
   return (
     <Container.FlexRow className="h-full justify-center items-center">
@@ -32,7 +30,8 @@ function ErrorFallBack({ error, resetErrorBoundary }: FallbackProps) {
   );
 }
 
-function Chart() {
+export default function Chart() {
+  console.log("chart rendered");
   return (
     <>
       <Container.FlexCol className="size-full">
@@ -46,8 +45,4 @@ function Chart() {
       </Container.FlexCol>
     </>
   );
-}
-
-export default function ChartPage() {
-  return <PageWrapper currentPage={<Chart />} nextPage={<Whook />} prevPage={<ChargeShop />} />;
 }
