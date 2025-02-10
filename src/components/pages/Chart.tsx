@@ -31,7 +31,6 @@ function ErrorFallBack({ error, resetErrorBoundary }: FallbackProps) {
 }
 
 export default function Chart() {
-  console.log("chart rendered");
   return (
     <>
       <Container.FlexCol className="size-full">

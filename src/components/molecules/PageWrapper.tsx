@@ -42,6 +42,8 @@ export default function PageWrapper({
     }
   }, []);
 
+  // @FIXME: 전역 상태인 x(useMotionValue)를 사용함에 따라 x.set(0)을 하게되면 페이지가 좌우로 이동하여
+  // 깜빡거리는 이슈가 발생
   const handleDragEnd = async (
     _event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
