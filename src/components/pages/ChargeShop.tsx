@@ -1,3 +1,9 @@
+import Container from "../atoms/Container";
+
 export default function ChargeShop() {
-  return <div>ChargeShop Page</div>;
+  return (
+    <Container.FlexRow className="size-full items-center justify-center">
+      ChargeShop Page
+    </Container.FlexRow>
+  );
 }

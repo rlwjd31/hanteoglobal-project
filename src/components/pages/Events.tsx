@@ -1,3 +1,9 @@
+import Container from "../atoms/Container";
+
 export default function Events() {
-  return <div>Events Page</div>;
+  return (
+    <Container.FlexRow className="size-full items-center justify-center">
+      Events Page
+    </Container.FlexRow>
+  );
 }

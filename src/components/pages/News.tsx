@@ -1,3 +1,9 @@
+import Container from "../atoms/Container";
+
 export default function News() {
-  return <div>News Page</div>;
+  return (
+    <Container.FlexRow className="size-full items-center justify-center">
+      News Page
+    </Container.FlexRow>
+  );
 }
