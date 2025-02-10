@@ -6,7 +6,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useLayoutEffect, useState } from "react";
 
 export default function PageWrapper({
   currentPage,
@@ -26,8 +26,7 @@ export default function PageWrapper({
   const x = useMotionValue(0);
   const [mainWidth, setMainWidth] = useState(768);
 
-  // TODO: 정확한 DOM에 접근하기 위해 useLayoutEffect 사용
-  useEffect(() => {
+  useLayoutEffect(() => {
     const mainElement = document.querySelector("main");
     if (mainElement) {
       const updateMainWidth = () =>
