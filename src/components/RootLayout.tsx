@@ -3,7 +3,8 @@ import Header from "./templates/Header";
 import Footer from "./templates/Footer";
 import Container from "./atoms/Container";
 import { AnimatePresence } from "framer-motion";
-export const layoutContainerWidthStyle = "w-full max-w-[48rem] min-w-[26.5625rem]";
+export const layoutContainerWidthStyle =
+  "w-full max-w-[48rem] min-w-[21.25rem]";
 
 export default function RootLayout() {
   return (
