@@ -1,23 +1,42 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { routeInfo } from "../../contants/route";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 
 import "swiper/swiper-bundle.css";
 import { layoutContainerWidthStyle } from "../RootLayout";
+import { FreeMode } from "swiper/modules";
+import { useEffect, useRef } from "react";
 
 export default function Header() {
+  const swiperRef = useRef<SwiperClass | null>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      const index = Object.values(routeInfo).findIndex(
+        (route) => route.path === location.pathname
+      );
+      if (index !== -1) {
+        swiperRef.current.slideTo(index);
+      }
+    }
+  }, [location.pathname]);
+
   return (
     <header
-      className={`absolute top-0 left-0 z-50 bg-header h-header ${layoutContainerWidthStyle}`}
+      className={`absolute  top-0 left-0 z-50 bg-header h-header ${layoutContainerWidthStyle}`}
     >
       <nav className="h-full">
         <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          modules={[FreeMode]}
           className="flex flex-row h-full items-center justify-between font-bold"
           initialSlide={0}
-          slidesPerView={Object.keys(routeInfo).length - 1 + 0.2}
+          slidesPerView={Object.keys(routeInfo).length - 2 + 0.2}
           spaceBetween={20}
           grabCursor
-          freeMode
+          freeMode={{ enabled: true, momentum: true, sticky: true }}
+          slideToClickedSlide
           loop
         >
           {Object.values(routeInfo).map((route) => (
