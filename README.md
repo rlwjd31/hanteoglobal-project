@@ -4,6 +4,11 @@ $) yarn install
 $) yarn dev --host #휴대폰 및 다른 기기에서 확인
 ```
 
+<img width="347" alt="image" src="https://github.com/user-attachments/assets/81c5de79-90bd-4085-88a5-a4279c3ae40c" />
+
+- 컴퓨터 접속시: localhost:5173
+- 휴대폰 및 다른기기에서 접속시: Network에 해당하는 URI로 접속(`같은 wi-fi 공유`)
+
 - 🎉 배포 vercel link: [production url](https://hanteoglobal-project.vercel.app/)
 
 | **Infinite Scroll** | **Gesture Page Navigation Effect** |
