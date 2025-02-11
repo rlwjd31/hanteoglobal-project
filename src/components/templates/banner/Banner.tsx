@@ -42,6 +42,7 @@ function PaginationBullets({
   );
 }
 
+// @FIXME: page gesture navigation시 banner와 page 둘 다 넘어가는 현상 
 export default function Banner() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef<Slider>(null);
