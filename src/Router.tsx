@@ -11,7 +11,7 @@ import News from "./components/pages/News";
 import Store from "./components/pages/Store";
 import ChargeShop from "./components/pages/ChargeShop";
 import RootLayout from "./components/RootLayout";
-import PageWrapper from "./components/molecules/PageWrapper";
+import PageWrapper from "./components/organisms/PageWrapper";
 import PageNotFound from "./components/pages/PageNotFound";
 
 const routes: RouteObject[] = [

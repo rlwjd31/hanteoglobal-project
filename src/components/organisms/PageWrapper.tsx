@@ -67,11 +67,7 @@ export default function PageWrapper({
     // 따라서, edge area에 들어오는 순간 touch가 되었다고 가정하고 isEdgeTouch를 true로 설정한다.
     // 또한 edge area에서 벗어나면 isEdgeTouch를 false로 설정되는데 pointer가 눌러지고 있다면 isEdgeTouch를 true로 유지하여
     // motion.div가 drag되도록 한다.
-    if (isPointerPressed || edgeCondition) {
-      setIsEdgeTouch(true)
-    }else {
-      setIsEdgeTouch(false)
-    }
+    setIsEdgeTouch(!!isPointerPressed || edgeCondition);
   };
 
   const handleDragEnd = async (
