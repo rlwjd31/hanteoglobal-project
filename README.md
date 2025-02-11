@@ -6,6 +6,14 @@ $) yarn dev --host #휴대폰 및 다른 기기에서 확인
 
 - 🎉 배포 vercel link: [production url](https://hanteoglobal-project.vercel.app/)
 
+| **Infinite Scroll** | **Gesture Page Navigation Effect** |
+|-------|-------|
+| ![1](https://github.com/user-attachments/assets/d575edc3-86a2-456f-8dd2-d96766fc2856) | ![2](https://github.com/user-attachments/assets/e634a3d0-9075-4218-aab6-68f3f2f2ff5a) |
+| **Swiper Tab Navigation** | **Infinite Slide Bannder** |
+| ![3](https://github.com/user-attachments/assets/a246cc0f-cc08-4899-855d-6f07f0a171d4) | ![4](https://github.com/user-attachments/assets/6b1f0e8f-672d-4b0d-a565-74740e722494) |
+
+
+
 # 구현 기능
 
 1. chart페이지 내 무한 스크롤 & fetching기능
@@ -397,6 +405,130 @@ export default function TabSwiper() {
     </Swiper>
   );
 }
+```
 
+---
+
+## 3️⃣ tab swiper
+
+### tab swiper gif
+
+![untitle](https://github.com/user-attachments/assets/a246cc0f-cc08-4899-855d-6f07f0a171d4)
+
+### tab siwper 구현부
+TabSipwer component내부에서 `Swiper`를 이용하여 구현
+
+- grab시 좌우로 움직여 다른 tab을 볼 수 있는 기능
+- click시 해당 page로 navigation
+
+```typescript
+// src/components/organisms/TabSwiper.tsx
+
+export default function TabSwiper() {
+  return (
+    <Swiper
+      ... // swiper options
+    >
+      {Object.values(routeInfo).map((route) => (
+        <SwiperSlide className="h-full" key={route.id}>
+          <NavLink
+            to={route.path}
+            className={({ isActive }) =>
+              `h-full flex items-center justify-center cursor-grab ${
+                isActive ? "text-white" : "text-black"
+              }`
+            }
+          >
+            <li className="list-none">{route.content}</li>
+          </NavLink>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+}
+```
+
+## 4️⃣ banner 무한 slide
+
+swiper를 가지고 구현하려했지만 무한 swiper를 구현 시 `activeIndex & realIndex`의 차이로 인해 불필요한 re-rendering을 방지하고자 react-slick`을 이용하여 구현함.
+pagination을 나타내는 UI인 `Bullets`은 스타일을 커스터마이징하는데 제한이 있어 `PaginationBullets`을 구현하여 pagniation을 적용
+
+- 무한 swiper
+- pagination
+- 클릭 시 해당 url로 이동
+
+### banner 무한 slide GIF
+
+![untitle](https://github.com/user-attachments/assets/6b1f0e8f-672d-4b0d-a565-74740e722494)
+
+
+### banner 무한 slide 구현부
+
+custom한 pagination bullets 구현.
+
+```typescript
+// src/components/templates/banner/Banner.tsx
+
+function PaginationBullets({
+  length,
+  callback,
+  currentIndex,
+  className = "",
+}: PaginationBulletsProps) {
+  return (
+    <Container.FlexRow
+      className={`w-full py-2 gap-2 items-center justify-center mt-2 ${className}`}
+    >
+      {Array(length)
+        .fill(0)
+        .map((_, index) => (
+          <span
+            className={`size-2 rounded-full cursor-pointer ${
+              currentIndex === index ? "bg-[#FC5BA8]" : "bg-neutral-400"
+            }`}
+            key={index}
+            onClick={() => callback(index)}
+          />
+        ))}
+    </Container.FlexRow>
+  );
+}
 
 ```
+
+pagination에 `onClickPaginationBullet`를 props로 전달하여 현재 active된 slide를 표시할 수 있게 함.
+
+```typescript
+// src/components/templates/banner/Banner.tsx
+
+export default function Banner() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef<Slider>(null);
+
+  const onClickPaginationBullet = (index: number) => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(index);
+    }
+  };
+
+  return (
+    <div className="flex flex-col size-full max-h-80">
+      <Slider {...settings} ref={sliderRef}>
+        {bannerInfo.map((banner) => (
+          <div key={banner.id}>
+            <a href={banner.href} target="_blank"> // 👉🏻 클릭시 해당 page로 새창을 열어서 이동
+              <Img src={banner.imgSrc} className="object-fill" />
+            </a>
+          </div>
+        ))}
+      </Slider>
+      <PaginationBullets
+        length={bannerInfo.length}
+        callback={onClickPaginationBullet}
+        currentIndex={currentIndex}
+      />
+    </div>
+  );
+}
+```
+
